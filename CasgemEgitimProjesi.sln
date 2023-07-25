@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CasgemEgitim.PresentationLayer", "CasgemEgitim.PresentationLayer\CasgemEgitim.PresentationLayer.csproj", "{1C45F413-251D-4962-83AE-CE763AC1BFF3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CasgemEgitim.EntityLayer", "CasgemEgitim.EntityLayer\CasgemEgitim.EntityLayer.csproj", "{FCB31727-4EFE-40A3-B1A9-81407DD35A99}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CasgemEgitim.DataAccessLayer", "CasgemEgitim.DataAccessLayer\CasgemEgitim.DataAccessLayer.csproj", "{D523CB3B-28BD-4505-8907-9D911958B65D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CasgemEgitim.BusinessLayer", "CasgemEgitim.BusinessLayer\CasgemEgitim.BusinessLayer.csproj", "{309A01D1-4531-4496-99CD-19B699EE634E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C45F413-251D-4962-83AE-CE763AC1BFF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C45F413-251D-4962-83AE-CE763AC1BFF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C45F413-251D-4962-83AE-CE763AC1BFF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C45F413-251D-4962-83AE-CE763AC1BFF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCB31727-4EFE-40A3-B1A9-81407DD35A99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCB31727-4EFE-40A3-B1A9-81407DD35A99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCB31727-4EFE-40A3-B1A9-81407DD35A99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCB31727-4EFE-40A3-B1A9-81407DD35A99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D523CB3B-28BD-4505-8907-9D911958B65D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D523CB3B-28BD-4505-8907-9D911958B65D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D523CB3B-28BD-4505-8907-9D911958B65D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D523CB3B-28BD-4505-8907-9D911958B65D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{309A01D1-4531-4496-99CD-19B699EE634E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{309A01D1-4531-4496-99CD-19B699EE634E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{309A01D1-4531-4496-99CD-19B699EE634E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{309A01D1-4531-4496-99CD-19B699EE634E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {32C9F4FD-544B-4911-80C3-898857C59164}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/bugraaad
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CasgemEgitim.BusinessLayer\\CasgemEgitim.BusinessLayer.csproj
+		SccProjectName1 = CasgemEgitim.BusinessLayer
+		SccLocalPath1 = CasgemEgitim.BusinessLayer
+		SccProjectUniqueName2 = CasgemEgitim.DataAccessLayer\\CasgemEgitim.DataAccessLayer.csproj
+		SccProjectName2 = CasgemEgitim.DataAccessLayer
+		SccLocalPath2 = CasgemEgitim.DataAccessLayer
+		SccProjectUniqueName3 = CasgemEgitim.EntityLayer\\CasgemEgitim.EntityLayer.csproj
+		SccProjectName3 = CasgemEgitim.EntityLayer
+		SccLocalPath3 = CasgemEgitim.EntityLayer
+		SccProjectUniqueName4 = CasgemEgitim.PresentationLayer\\CasgemEgitim.PresentationLayer.csproj
+		SccProjectName4 = CasgemEgitim.PresentationLayer
+		SccLocalPath4 = CasgemEgitim.PresentationLayer
+	EndGlobalSection
+EndGlobal
