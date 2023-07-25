@@ -3860,6 +3860,16 @@
         "runtime": {
           "bin/placeholder/CasgemEgitim.EntityLayer.dll": {}
         }
+      },
+      "CasgemEgitim.ModelViewLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/CasgemEgitim.ModelViewLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CasgemEgitim.ModelViewLayer.dll": {}
+        }
       }
     }
   },
@@ -10904,12 +10914,18 @@
       "type": "project",
       "path": "../CasgemEgitim.EntityLayer/CasgemEgitim.EntityLayer.csproj",
       "msbuildProject": "../CasgemEgitim.EntityLayer/CasgemEgitim.EntityLayer.csproj"
+    },
+    "CasgemEgitim.ModelViewLayer/1.0.0": {
+      "type": "project",
+      "path": "../CasgemEgitim.ModelViewLayer/CasgemEgitim.ModelViewLayer.csproj",
+      "msbuildProject": "../CasgemEgitim.ModelViewLayer/CasgemEgitim.ModelViewLayer.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "CasgemEgitim.BusinessLayer >= 1.0.0",
       "CasgemEgitim.DataAccessLayer >= 1.0.0",
+      "CasgemEgitim.ModelViewLayer >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.20",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.20",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.20",
@@ -10950,6 +10966,9 @@
             },
             "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\CasgemEgitimProjesi\\CasgemEgitim.DataAccessLayer\\CasgemEgitim.DataAccessLayer.csproj": {
               "projectPath": "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\CasgemEgitimProjesi\\CasgemEgitim.DataAccessLayer\\CasgemEgitim.DataAccessLayer.csproj"
+            },
+            "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\CasgemEgitimProjesi\\CasgemEgitim.ModelViewLayer\\CasgemEgitim.ModelViewLayer.csproj": {
+              "projectPath": "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\CasgemEgitimProjesi\\CasgemEgitim.ModelViewLayer\\CasgemEgitim.ModelViewLayer.csproj"
             }
           }
         }

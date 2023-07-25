@@ -30,6 +30,7 @@
   <ItemGroup>
     <ProjectReference Include="..\CasgemEgitim.BusinessLayer\CasgemEgitim.BusinessLayer.csproj" />
     <ProjectReference Include="..\CasgemEgitim.DataAccessLayer\CasgemEgitim.DataAccessLayer.csproj" />
+    <ProjectReference Include="..\CasgemEgitim.ModelViewLayer\CasgemEgitim.ModelViewLayer.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -10,6 +10,7 @@
         "dependencies": {
           "CasgemEgitim.BusinessLayer": "1.0.0",
           "CasgemEgitim.DataAccessLayer": "1.0.0",
+          "CasgemEgitim.ModelViewLayer": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.20",
           "Microsoft.EntityFrameworkCore.Design": "6.0.20",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.20",
@@ -2536,6 +2537,11 @@
         "runtime": {
           "CasgemEgitim.EntityLayer.dll": {}
         }
+      },
+      "CasgemEgitim.ModelViewLayer/1.0.0": {
+        "runtime": {
+          "CasgemEgitim.ModelViewLayer.dll": {}
+        }
       }
     }
   },
@@ -4082,6 +4088,11 @@
       "sha512": ""
     },
     "CasgemEgitim.EntityLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CasgemEgitim.ModelViewLayer/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

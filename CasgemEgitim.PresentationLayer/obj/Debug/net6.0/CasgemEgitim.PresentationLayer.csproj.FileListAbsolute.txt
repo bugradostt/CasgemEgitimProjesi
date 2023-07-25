@@ -255,3 +255,5 @@ C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\CasgemEgitimProjesi\CasgemEgit
 C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\CasgemEgitimProjesi\CasgemEgitim.PresentationLayer\obj\Debug\net6.0\CasgemEgitim.PresentationLayer.pdb
 C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\CasgemEgitimProjesi\CasgemEgitim.PresentationLayer\obj\Debug\net6.0\CasgemEgitim.PresentationLayer.genruntimeconfig.cache
 C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\CasgemEgitimProjesi\CasgemEgitim.PresentationLayer\obj\Debug\net6.0\ref\CasgemEgitim.PresentationLayer.dll
+C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\CasgemEgitimProjesi\CasgemEgitim.PresentationLayer\bin\Debug\net6.0\CasgemEgitim.ModelViewLayer.dll
+C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\CasgemEgitimProjesi\CasgemEgitim.PresentationLayer\bin\Debug\net6.0\CasgemEgitim.ModelViewLayer.pdb
