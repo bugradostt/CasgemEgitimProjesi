@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CasgemEgitim.DataAccessLaye
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CasgemEgitim.BusinessLayer", "CasgemEgitim.BusinessLayer\CasgemEgitim.BusinessLayer.csproj", "{309A01D1-4531-4496-99CD-19B699EE634E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasgemEgitim.ModelViewLayer", "CasgemEgitim.ModelViewLayer\CasgemEgitim.ModelViewLayer.csproj", "{E1A81206-203B-4222-BA75-A3A7A89D49DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,29 +35,15 @@ Global
 		{309A01D1-4531-4496-99CD-19B699EE634E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{309A01D1-4531-4496-99CD-19B699EE634E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{309A01D1-4531-4496-99CD-19B699EE634E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1A81206-203B-4222-BA75-A3A7A89D49DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1A81206-203B-4222-BA75-A3A7A89D49DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1A81206-203B-4222-BA75-A3A7A89D49DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1A81206-203B-4222-BA75-A3A7A89D49DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {32C9F4FD-544B-4911-80C3-898857C59164}
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 5
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://dev.azure.com/bugraaad
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = CasgemEgitim.BusinessLayer\\CasgemEgitim.BusinessLayer.csproj
-		SccProjectName1 = CasgemEgitim.BusinessLayer
-		SccLocalPath1 = CasgemEgitim.BusinessLayer
-		SccProjectUniqueName2 = CasgemEgitim.DataAccessLayer\\CasgemEgitim.DataAccessLayer.csproj
-		SccProjectName2 = CasgemEgitim.DataAccessLayer
-		SccLocalPath2 = CasgemEgitim.DataAccessLayer
-		SccProjectUniqueName3 = CasgemEgitim.EntityLayer\\CasgemEgitim.EntityLayer.csproj
-		SccProjectName3 = CasgemEgitim.EntityLayer
-		SccLocalPath3 = CasgemEgitim.EntityLayer
-		SccProjectUniqueName4 = CasgemEgitim.PresentationLayer\\CasgemEgitim.PresentationLayer.csproj
-		SccProjectName4 = CasgemEgitim.PresentationLayer
-		SccLocalPath4 = CasgemEgitim.PresentationLayer
 	EndGlobalSection
 EndGlobal
