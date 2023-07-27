@@ -12,6 +12,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<ICourseDal, EfCourseRepository>();
 builder.Services.AddScoped<ICourseService, CourseManager>();
 
+builder.Services.AddScoped<IStudentDal, EfStudentRepository>();
+builder.Services.AddScoped<IStudentService, StudentManager>();
+
 
 builder.Services.AddDbContext<Context>();
 builder.Services.AddControllersWithViews();

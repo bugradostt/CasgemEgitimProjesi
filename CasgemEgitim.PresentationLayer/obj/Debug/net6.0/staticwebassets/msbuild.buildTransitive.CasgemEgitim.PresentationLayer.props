@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\CasgemEgitim.PresentationLayer.props" />
-</Project>

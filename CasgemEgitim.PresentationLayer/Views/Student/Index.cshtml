@@ -1,0 +1,37 @@
+﻿@model List<Student>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/Student/_StudentLayout.cshtml";
+}
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<h1>Öğrenci Listesi</h1>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Öğrenci Adı</th>
+        <th>Öğrenci Soyadı</th>
+        <th>Öğrenci Email</th>
+        <th>Kullanıcı Adı</th>
+        <th>Şifre</th>
+        <th>Resim</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.StudentID</td>
+            <td>@item.StudentName</td>
+            <td>@item.StudentSurname</td>
+            <td>@item.Mail</td>
+            <td>@item.Username</td>
+            <td>@item.Password</td>
+            <td>@item.ImageUrl</td>
+            <td><a href="/Student/DeleteStudent/@item.StudentID" class="btn  btn-danger">Sil</a></td>
+            <td><a href="/Student/UpdateStudent/@item.StudentID" class="btn  btn-dark">Güncelle</a></td>
+        </tr>
+    }        
+</table>
+<a href="/Student/AddStudent" class="btn btn-info">Yeni Öğrenci Ekle</a>
