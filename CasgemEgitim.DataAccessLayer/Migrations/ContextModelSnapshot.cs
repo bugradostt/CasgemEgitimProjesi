@@ -76,9 +76,37 @@ namespace CasgemEgitim.DataAccessLayer.Migrations
                     b.Property<int>("CourseStudent")
                         .HasColumnType("int");
 
+                    b.Property<int>("TeacherId")
+                        .HasColumnType("int");
+
                     b.HasKey("CourseId");
 
+                    b.HasIndex("TeacherId");
+
                     b.ToTable("Courses");
+                });
+
+            modelBuilder.Entity("CasgemEgitim.EntityLayer.Concrete.Movement", b =>
+                {
+                    b.Property<int>("MovementId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MovementId"), 1L, 1);
+
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("StudentId")
+                        .HasColumnType("int");
+
+                    b.HasKey("MovementId");
+
+                    b.HasIndex("CourseId");
+
+                    b.HasIndex("StudentId");
+
+                    b.ToTable("Movements");
                 });
 
             modelBuilder.Entity("CasgemEgitim.EntityLayer.Concrete.Student", b =>
@@ -149,6 +177,109 @@ namespace CasgemEgitim.DataAccessLayer.Migrations
                     b.HasKey("TeachertId");
 
                     b.ToTable("Teachers");
+                });
+
+            modelBuilder.Entity("CasgemEgitim.EntityLayer.Concrete.Video", b =>
+                {
+                    b.Property<int>("VideoId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("VideoId"), 1L, 1);
+
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("VideoUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("VideoId");
+
+                    b.HasIndex("CourseId");
+
+                    b.ToTable("Videos");
+                });
+
+            modelBuilder.Entity("CourseStudent", b =>
+                {
+                    b.Property<int>("CoursesCourseId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("StudentsStudentID")
+                        .HasColumnType("int");
+
+                    b.HasKey("CoursesCourseId", "StudentsStudentID");
+
+                    b.HasIndex("StudentsStudentID");
+
+                    b.ToTable("CourseStudent");
+                });
+
+            modelBuilder.Entity("CasgemEgitim.EntityLayer.Concrete.Course", b =>
+                {
+                    b.HasOne("CasgemEgitim.EntityLayer.Concrete.Teacher", "Teacher")
+                        .WithMany("Courses")
+                        .HasForeignKey("TeacherId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Teacher");
+                });
+
+            modelBuilder.Entity("CasgemEgitim.EntityLayer.Concrete.Movement", b =>
+                {
+                    b.HasOne("CasgemEgitim.EntityLayer.Concrete.Course", "Course")
+                        .WithMany()
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CasgemEgitim.EntityLayer.Concrete.Student", "Student")
+                        .WithMany()
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Course");
+
+                    b.Navigation("Student");
+                });
+
+            modelBuilder.Entity("CasgemEgitim.EntityLayer.Concrete.Video", b =>
+                {
+                    b.HasOne("CasgemEgitim.EntityLayer.Concrete.Course", "Course")
+                        .WithMany("Videos")
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Course");
+                });
+
+            modelBuilder.Entity("CourseStudent", b =>
+                {
+                    b.HasOne("CasgemEgitim.EntityLayer.Concrete.Course", null)
+                        .WithMany()
+                        .HasForeignKey("CoursesCourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CasgemEgitim.EntityLayer.Concrete.Student", null)
+                        .WithMany()
+                        .HasForeignKey("StudentsStudentID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("CasgemEgitim.EntityLayer.Concrete.Course", b =>
+                {
+                    b.Navigation("Videos");
+                });
+
+            modelBuilder.Entity("CasgemEgitim.EntityLayer.Concrete.Teacher", b =>
+                {
+                    b.Navigation("Courses");
                 });
 #pragma warning restore 612, 618
         }

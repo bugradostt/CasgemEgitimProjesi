@@ -13,10 +13,11 @@ namespace CasgemEgitim.BusinessLayer.Concrete
     {
         readonly ITeacherDal _teacherDal;
 
-        public TeacherManager(ITeacherDal TeacherDal)
+        public TeacherManager(ITeacherDal teacherDal)
         {
-            _teacherDal = TeacherDal;
+            _teacherDal = teacherDal;
         }
+
         public void TDelete(Teacher t)
         {
             _teacherDal.Delete(t);

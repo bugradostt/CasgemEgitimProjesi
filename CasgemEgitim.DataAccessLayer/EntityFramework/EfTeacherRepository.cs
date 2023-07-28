@@ -13,4 +13,3 @@ namespace CasgemEgitim.DataAccessLayer.EntityFramework
     {
     }
 }
-

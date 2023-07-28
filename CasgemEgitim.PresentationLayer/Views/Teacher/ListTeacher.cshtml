@@ -1,0 +1,55 @@
+﻿@model List<Teacher>
+@{
+    ViewData["Title"] = "ListTeacher";
+    Layout = "~/Views/Shared/Teacher/_TeacherLayout.cshtml";
+}
+<div class="container">
+    <br />
+
+    <h1>Öğretmen Listesi</h1>
+    <br />
+    <a class="btn btn-success" href="/Teacher/AddTeacher/"> Yeni Öğretmen</a>
+
+
+    <hr />
+    <div class="row">
+        @foreach (var i in Model)
+        {
+           
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="@i.TeacherImageUrl" height="150" class="card-img-top" >
+                    <div class="card-body">
+                        <h5 class="card-title text-bold">@i.TeacherUsername</h5>
+                        <p class="card-text text-gray">@i.TeacherName @i.TeacherSurname</p>
+
+                    </div>
+                    <div class="card-body">
+                        <hr />
+                        <div class="row">
+
+
+                            <div class="col-md-2 mr-1 ml-2">
+                                <a href="/Teacher/DeleteTeacher/@i.TeachertId" class="btn btn-danger ">Sil</a>
+                            </div>
+                            <div class="col-md-4 mr-2">
+                                <a href="/Teacher/UpdateTeacher/@i.TeachertId" class="btn btn-warning ">Güncelle</a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="#" class="btn btn-secondary ">Detay</a>
+                            </div>
+
+                    </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+
+    </div>
+
+
+</div>
+
+
+

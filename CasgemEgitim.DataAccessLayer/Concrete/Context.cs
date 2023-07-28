@@ -13,11 +13,11 @@ namespace CasgemEgitim.DataAccessLayer.Concrete
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //Bugra
-           // optionsBuilder.UseSqlServer(@"Data Source=BUDOTEKNO\SQLEXPRESS; initial catalog=CasgemEgitimProjesiDb; integrated security=true");
+           optionsBuilder.UseSqlServer(@"Data Source=BUDOTEKNO\SQLEXPRESS; initial catalog=CasgemEgitimProjesiDb; integrated security=true");
 
 
             //Nurgül
-            //optionsBuilder.UseSqlServer("Data Source=; initial catalog=CasgemEgitimProjesiDb; integrated security=true");
+            //optionsBuilder.UseSqlServer("Data Source=LAPTOP-DMD5S6B7; initial catalog=CasgemEgitimProjesiDb; integrated security=true");
 
 
             //Selvi
@@ -25,10 +25,12 @@ namespace CasgemEgitim.DataAccessLayer.Concrete
 
         }
 
-        public DbSet<Course> Courses { get; set; }
         public DbSet<Contact> Contacts{ get; set; }
-        public DbSet<Teacher> Teachers { get; set; }
+        public DbSet<Course> Courses { get; set; }
+        public DbSet<Movement> Movements{ get; set; }
         public DbSet<Student> Students { get; set; }
+        public DbSet<Teacher> Teachers { get; set; }
+        public DbSet<Video> Videos{ get; set; }
 
 
 

@@ -1,0 +1,28 @@
+﻿@model Teacher
+@{
+    ViewData["Title"] = "AddTeacher";
+    Layout = "~/Views/Shared/Teacher/_TeacherLayout.cshtml";
+}
+
+<h1>Öğretmen Ekle</h1>
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<br />
+<br />
+<form method="post">
+    <label>Öğretmen Adı</label>
+    <input type="text" class="form-control" asp-for="TeacherName" />
+    <br />
+    <label>Öğretmen Soyadı</label>
+    <input type="text" class="form-control" asp-for="TeacherSurname" />
+    <br />
+    <label>Öğretmen Kullanıcı Adı</label>
+    <input type="text" class="form-control" asp-for="TeacherUsername" />
+    <br />
+    <label>Şifre</label>
+    <input type="text" class="form-control" asp-for="TeacherPassword" />
+    <br />
+    <label>Resim</label>
+    <input type="text" class="form-control" asp-for="TeacherImageUrl" />
+    <br />
+    <button class="btn btn-primary">Ekle</button>
+</form>

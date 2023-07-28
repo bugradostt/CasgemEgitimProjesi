@@ -15,6 +15,10 @@ builder.Services.AddScoped<ICourseService, CourseManager>();
 builder.Services.AddScoped<IStudentDal, EfStudentRepository>();
 builder.Services.AddScoped<IStudentService, StudentManager>();
 
+builder.Services.AddScoped<ITeacherDal, EfTeacherRepository>();
+builder.Services.AddScoped<ITeacherService, TeacherManager>();
+
+
 
 builder.Services.AddDbContext<Context>();
 builder.Services.AddControllersWithViews();
