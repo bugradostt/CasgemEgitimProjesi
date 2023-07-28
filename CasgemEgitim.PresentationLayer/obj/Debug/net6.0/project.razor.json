@@ -18404,6 +18404,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\CasgemEgitimProjesi\\CasgemEgitim.PresentationLayer\\Views\\TeacherCourse\\AddCourse.cshtml",
+      "TargetPath": "Views\\TeacherCourse\\AddCourse.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\CasgemEgitimProjesi\\CasgemEgitim.PresentationLayer\\Views\\Teacher\\ListTeacher.cshtml",
       "TargetPath": "Views\\Teacher\\ListTeacher.cshtml",
       "FileKind": "mvc"
@@ -18421,6 +18426,11 @@
     {
       "FilePath": "c:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\CasgemEgitimProjesi\\CasgemEgitim.PresentationLayer\\Views\\Student\\UpdateStudent.cshtml",
       "TargetPath": "Views\\Student\\UpdateStudent.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\CasgemEgitimProjesi\\CasgemEgitim.PresentationLayer\\Views\\TeacherCourse\\UpdateCourse.cshtml",
+      "TargetPath": "Views\\TeacherCourse\\UpdateCourse.cshtml",
       "FileKind": "mvc"
     },
     {

@@ -1,0 +1,40 @@
+﻿@model Course
+@{
+    ViewData["Title"] = "ListCourse";
+    Layout = "~/Views/Shared/Teacher/_TeacherLayout.cshtml";
+}
+
+<div class="container">
+
+    <form method="post">
+
+        <div class="mb-3">
+            <label>Kurs Adı</label>
+            <input type="text" class="form-control" placeholder="Kurs adı" asp-for="CourseName" />
+        </div>
+
+        <div class="mb-3">
+            <label>Fotoğraf Url</label>
+            <input type="text" class="form-control" placeholder="Fotoğraf url" asp-for="CourseImgUrl" />
+        </div>
+
+        <div class="mb-3">
+            <label>Fiyat</label>
+            <input type="text" class="form-control" placeholder="Kurs fiyatı" asp-for="CoursePrice" />
+        </div>
+
+        <div class="mb-3">
+            <label>Açıklama</label>
+            <textarea class="form-control" rows="6" placeholder="Kurs adı" asp-for="CourseDes"></textarea>
+        </div>
+
+      
+
+        <div class="mb-3">
+            <a class="btn btn-danger" href="/TeacherCourse/ListCourse/">İptal</a>
+            <input type="submit" class="btn btn-success"  value="Kaydet" />
+        </div>
+
+    </form>
+
+</div>

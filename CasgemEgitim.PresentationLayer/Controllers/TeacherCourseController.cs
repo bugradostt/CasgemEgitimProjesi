@@ -1,4 +1,6 @@
 ﻿using CasgemEgitim.BusinessLayer.Abstract;
+using CasgemEgitim.EntityLayer.Concrete;
+using CasgemEgitim.ModelViewLayer.ModelView.Course;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CasgemEgitim.PresentationLayer.Controllers
@@ -23,6 +25,34 @@ namespace CasgemEgitim.PresentationLayer.Controllers
         {
             var foundId = _courseService.TGetById(id);
             _courseService.TDelete(foundId);
+            return RedirectToAction("ListCourse");
+        }
+
+        [HttpGet]
+        public IActionResult AddCourse()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult AddCourse(Course p)
+        {
+            p.TeacherId = 1;
+            _courseService.TInsert(p);
+            return RedirectToAction("ListCourse");
+        }
+
+        [HttpGet]
+        public IActionResult UpdateCourse(int id)
+        {
+            var values = _courseService.TGetById(id);
+            return View(values);
+        }
+
+        [HttpPost]
+        public IActionResult UpdateCourse(Course p)
+        {
+            p.TeacherId = 1;
+            _courseService.TUpdate(p);
             return RedirectToAction("ListCourse");
         }
     }

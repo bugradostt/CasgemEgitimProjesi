@@ -2539,6 +2539,9 @@
         }
       },
       "CasgemEgitim.ModelViewLayer/1.0.0": {
+        "dependencies": {
+          "CasgemEgitim.EntityLayer": "1.0.0"
+        },
         "runtime": {
           "CasgemEgitim.ModelViewLayer.dll": {}
         }

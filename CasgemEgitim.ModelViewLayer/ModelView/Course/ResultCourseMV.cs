@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CasgemEgitim.EntityLayer.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,5 +15,9 @@ namespace CasgemEgitim.ModelViewLayer.ModelView.Course
         public string CourseDes { get; set; }
         public decimal CoursePrice { get; set; }
         public int CourseStudent { get; set; }
+        public List<Video> Videos { get; set; }
+        public List<Student> Students { get; set; }
+        public int TeacherId { get; set; }
+        public Teacher Teacher { get; set; }
     }
 }
