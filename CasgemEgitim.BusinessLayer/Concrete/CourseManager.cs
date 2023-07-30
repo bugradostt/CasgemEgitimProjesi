@@ -33,6 +33,11 @@ namespace CasgemEgitim.BusinessLayer.Concrete
             return _courseDal.GetCoursesWithTeacher();
         }
 
+        public List<Course> TGetCoursesWithUserStudent()
+        {
+           return _courseDal.GetCoursesWithUserStudent();
+        }
+
         public List<Course> TGetCoursesWithUserTeacher()
         {
             return _courseDal.GetCoursesWithUserTeacher();

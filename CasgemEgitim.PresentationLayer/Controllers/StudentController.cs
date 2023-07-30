@@ -46,7 +46,7 @@ namespace CasgemEgitim.PresentationLayer.Controllers
         [HttpPost]
         public IActionResult UpdateStudent(Student student)
         {
-            var values = _studentService.TGetById(student.StudentID);
+            var values = _studentService.TGetById(student.StudentId);
             values.StudentName = student.StudentName;
             values.StudentSurname = student.StudentSurname;
             values.Username = student.Username;

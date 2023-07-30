@@ -16,7 +16,6 @@ namespace CasgemEgitim.EntityLayer.Concrete
         public string TeacherUsername { get; set; }
         public string TeacherPassword { get; set; }
         public string TeacherImageUrl { get; set; }
-
         public List<Course> Courses { get; set; }
 
     }

@@ -73,6 +73,9 @@ namespace CasgemEgitim.DataAccessLayer.Migrations
                     b.Property<decimal>("CoursePrice")
                         .HasColumnType("decimal(18,2)");
 
+                    b.Property<int>("StudentId")
+                        .HasColumnType("int");
+
                     b.Property<int>("TeacherId")
                         .HasColumnType("int");
 
@@ -108,11 +111,11 @@ namespace CasgemEgitim.DataAccessLayer.Migrations
 
             modelBuilder.Entity("CasgemEgitim.EntityLayer.Concrete.Student", b =>
                 {
-                    b.Property<int>("StudentID")
+                    b.Property<int>("StudentId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("StudentID"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("StudentId"), 1L, 1);
 
                     b.Property<string>("ImageUrl")
                         .IsRequired()
@@ -138,7 +141,7 @@ namespace CasgemEgitim.DataAccessLayer.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("StudentID");
+                    b.HasKey("StudentId");
 
                     b.ToTable("Students");
                 });
@@ -203,12 +206,12 @@ namespace CasgemEgitim.DataAccessLayer.Migrations
                     b.Property<int>("CoursesCourseId")
                         .HasColumnType("int");
 
-                    b.Property<int>("StudentsStudentID")
+                    b.Property<int>("StudentsStudentId")
                         .HasColumnType("int");
 
-                    b.HasKey("CoursesCourseId", "StudentsStudentID");
+                    b.HasKey("CoursesCourseId", "StudentsStudentId");
 
-                    b.HasIndex("StudentsStudentID");
+                    b.HasIndex("StudentsStudentId");
 
                     b.ToTable("CourseStudent");
                 });
@@ -264,7 +267,7 @@ namespace CasgemEgitim.DataAccessLayer.Migrations
 
                     b.HasOne("CasgemEgitim.EntityLayer.Concrete.Student", null)
                         .WithMany()
-                        .HasForeignKey("StudentsStudentID")
+                        .HasForeignKey("StudentsStudentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

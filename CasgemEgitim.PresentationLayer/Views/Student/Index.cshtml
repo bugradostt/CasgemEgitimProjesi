@@ -22,15 +22,15 @@
     @foreach (var item in Model)
     {
         <tr>
-            <td>@item.StudentID</td>
+            <td>@item.StudentId</td>
             <td>@item.StudentName</td>
             <td>@item.StudentSurname</td>
             <td>@item.Mail</td>
             <td>@item.Username</td>
             <td>@item.Password</td>
             <td>@item.ImageUrl</td>
-            <td><a href="/Student/DeleteStudent/@item.StudentID" class="btn  btn-danger">Sil</a></td>
-            <td><a href="/Student/UpdateStudent/@item.StudentID" class="btn  btn-dark">Güncelle</a></td>
+            <td><a href="/Student/DeleteStudent/@item.StudentId" class="btn  btn-danger">Sil</a></td>
+            <td><a href="/Student/UpdateStudent/@item.StudentId" class="btn  btn-dark">Güncelle</a></td>
         </tr>
     }        
 </table>

@@ -20,6 +20,11 @@ namespace CasgemEgitim.DataAccessLayer.EntityFramework
             return c.Courses.Include(x => x.Teacher).ToList();
         }
 
+        public List<Course> GetCoursesWithUserStudent()
+        {
+            return c.Courses.Where(x => x.StudentId == 1).ToList();
+        }
+
         public List<Course> GetCoursesWithUserTeacher()
         {
             return c.Courses.Where(x=>x.TeacherId==1).ToList();
