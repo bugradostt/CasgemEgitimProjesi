@@ -13,7 +13,7 @@ namespace CasgemEgitim.PresentationLayer.Controllers
         }
         public IActionResult Index()
         {
-            var values = _courseService.TGetList().OrderByDescending(x => x.CourseId).ToList();
+            var values = _courseService.TGetCoursesWithTeacher().OrderByDescending(x => x.CourseId).ToList();
             return View(values);
         }
     }

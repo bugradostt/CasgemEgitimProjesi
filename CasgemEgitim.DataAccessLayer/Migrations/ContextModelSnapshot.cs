@@ -73,9 +73,6 @@ namespace CasgemEgitim.DataAccessLayer.Migrations
                     b.Property<decimal>("CoursePrice")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int>("CourseStudent")
-                        .HasColumnType("int");
-
                     b.Property<int>("TeacherId")
                         .HasColumnType("int");
 

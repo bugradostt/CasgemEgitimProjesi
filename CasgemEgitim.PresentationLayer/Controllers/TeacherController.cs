@@ -1,4 +1,5 @@
 ﻿using CasgemEgitim.BusinessLayer.Abstract;
+using CasgemEgitim.DataAccessLayer.Concrete;
 using CasgemEgitim.EntityLayer.Concrete;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,10 +8,14 @@ namespace CasgemEgitim.PresentationLayer.Controllers
     public class TeacherController : Controller
     {
         readonly ITeacherService _teacherService;
+        readonly ICourseService _courseService;
+        private Context dbContext = new Context();
 
-        public TeacherController(ITeacherService teacherService)
+        public TeacherController(ITeacherService teacherService, ICourseService courseService)
         {
             _teacherService = teacherService;
+            _courseService = courseService;
+
         }
 
         //Kurs
@@ -57,5 +62,12 @@ namespace CasgemEgitim.PresentationLayer.Controllers
             _teacherService.TUpdate(values);
             return RedirectToAction("ListTeacher");
         }
+        public IActionResult TeacherCourse(int teacherId)
+        {
+            var values = dbContext.Courses.Where(c => c.TeacherId== teacherId).ToList();
+            return View(values);
+        }
+
+
     }
 }

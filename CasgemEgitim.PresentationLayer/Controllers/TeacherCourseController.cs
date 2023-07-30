@@ -17,7 +17,8 @@ namespace CasgemEgitim.PresentationLayer.Controllers
         //Kurs
         public IActionResult ListCourse()
         {
-            var values = _courseService.TGetList().OrderByDescending(x => x.CourseId).ToList();
+            //var values = _courseService.TGetList().OrderByDescending(x => x.CourseId).ToList();
+            var values = _courseService.TGetCoursesWithUserTeacher().OrderByDescending(x => x.CourseId).ToList();
             return View(values);
         }
 
