@@ -20,11 +20,29 @@ namespace CasgemEgitim.DataAccessLayer.EntityFramework
             return c.Courses.Include(x => x.Teacher).ToList();
         }
 
-        public List<Course> GetCoursesWithUserStudent()
+        public List<Course> GetCoursesWithUserStudent(int id)
         {
-            return c.Courses.Where(x => x.StudentId == 1).ToList();
-        }
+            // Öğrencinin aldığı tüm kurslar geliyor
+            var movements = c.Movements.Where(m => m.StudentId == id).ToList();
 
+            // Kursları saklayacak bir liste oluşturuyoruz.
+            var courses = new List<Course>();
+
+            //  her bir kursu ekliyoruz eğer aynı kurs birden fazla harekette varsa tekrar eklemeyecek
+             foreach (var movement in movements)
+             {
+                var foundCourse= c.Courses.Find(movement.CourseId);
+
+                 if (foundCourse!= null)
+                 {
+                     courses.Add(foundCourse);
+                 }
+             }
+           
+
+            return courses;
+
+        }
         public List<Course> GetCoursesWithUserTeacher()
         {
             return c.Courses.Where(x=>x.TeacherId==1).ToList();

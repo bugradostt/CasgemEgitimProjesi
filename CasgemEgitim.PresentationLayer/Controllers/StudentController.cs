@@ -7,10 +7,12 @@ namespace CasgemEgitim.PresentationLayer.Controllers
     public class StudentController : Controller
     {
         private readonly IStudentService _studentService;
+        private readonly ICourseService _courseService;
 
-        public StudentController(IStudentService studentService)
+        public StudentController(IStudentService studentService, ICourseService courseService = null)
         {
             _studentService = studentService;
+            _courseService = courseService;
         }
 
         public IActionResult Index()
@@ -18,6 +20,15 @@ namespace CasgemEgitim.PresentationLayer.Controllers
             var values = _studentService.TGetList();
             return View(values);
         }
+
+
+        public IActionResult ListUserCourse()
+        {
+            var values = _courseService.TGetCoursesWithUserStudent(1);
+            return View(values);
+        }
+
+
         [HttpGet]
         public IActionResult AddStudent()
         {

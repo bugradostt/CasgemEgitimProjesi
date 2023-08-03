@@ -11,7 +11,7 @@ namespace CasgemEgitim.DataAccessLayer.Abstract
     {
         public List<Course> GetCoursesWithTeacher();
         public List<Course> GetCoursesWithUserTeacher();
-        public List<Course> GetCoursesWithUserStudent();
+        public List<Course> GetCoursesWithUserStudent(int id);
     }
 
 }

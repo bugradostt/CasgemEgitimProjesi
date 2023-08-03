@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\CasgemEgitimProjesi\CasgemEgitim.PresentationLayer
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/Message/GetInboxTeacher.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVxHZXRJbmJveFRlYWNoZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -42,6 +46,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/Student/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/Student/ListUserCourse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxMaXN0VXNlckNvdXJzZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/Student/UpdateStudent.cshtml]

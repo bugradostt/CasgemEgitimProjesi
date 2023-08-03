@@ -1,4 +1,5 @@
 ﻿using CasgemEgitim.DataAccessLayer.Abstract;
+using CasgemEgitim.DataAccessLayer.Concrete;
 using CasgemEgitim.DataAccessLayer.Repositories;
 using CasgemEgitim.EntityLayer.Concrete;
 using System;
@@ -9,7 +10,8 @@ using System.Threading.Tasks;
 
 namespace CasgemEgitim.DataAccessLayer.EntityFramework
 {
-    public class EfStudentRepository:GenericRepositoriy<Student>,IStudentDal
+    public class EfStudentRepository : GenericRepositoriy<Student>, IStudentDal
     {
+       
     }
 }

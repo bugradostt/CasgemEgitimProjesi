@@ -18,6 +18,9 @@ builder.Services.AddScoped<IStudentService, StudentManager>();
 builder.Services.AddScoped<ITeacherDal, EfTeacherRepository>();
 builder.Services.AddScoped<ITeacherService, TeacherManager>();
 
+builder.Services.AddScoped<IMessageDal, EFMessageRepository>();
+builder.Services.AddScoped<IMessageService, MessageManager>();
+
 
 
 builder.Services.AddDbContext<Context>();

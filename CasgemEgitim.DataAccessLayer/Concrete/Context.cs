@@ -13,7 +13,7 @@ namespace CasgemEgitim.DataAccessLayer.Concrete
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //Bugra
-           optionsBuilder.UseSqlServer(@"Data Source=BUDOTEKNO\SQLEXPRESS; initial catalog=CasgemEgitimProjesiDb; integrated security=true");
+          optionsBuilder.UseSqlServer(@"Data Source=BUDOTEKNO\SQLEXPRESS; initial catalog=CasgemEgitimProjesiDb; integrated security=true");
 
 
             //Nurgül
@@ -25,12 +25,31 @@ namespace CasgemEgitim.DataAccessLayer.Concrete
 
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Message>()
+               .HasOne(x => x.SenderUser)
+               .WithMany(y => y.TeacherSender)
+               .HasForeignKey(z => z.SenderID)
+               .OnDelete(DeleteBehavior.ClientSetNull);
+
+            modelBuilder.Entity<Message>()
+               .HasOne(x => x.ReceiverUser)
+               .WithMany(y => y.TeacherReceiver)
+               .HasForeignKey(z => z.ReceiverID)
+               .OnDelete(DeleteBehavior.ClientSetNull);
+            base.OnModelCreating(modelBuilder);
+            
+
+        }
+
         public DbSet<Contact> Contacts{ get; set; }
         public DbSet<Course> Courses { get; set; }
         public DbSet<Movement> Movements{ get; set; }
         public DbSet<Student> Students { get; set; }
         public DbSet<Teacher> Teachers { get; set; }
         public DbSet<Video> Videos{ get; set; }
+        public DbSet<Message> Messages{ get; set; }
 
 
 

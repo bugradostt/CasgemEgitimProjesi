@@ -1,0 +1,57 @@
+﻿@model List<Course>
+@{
+    Layout = "~/Views/Shared/Student/_StudentLayout.cshtml";
+}
+
+
+
+
+<div class="container">
+    <br />
+
+    <h1>Kurs Listesi</h1>
+    <br />
+    <a class="btn btn-success" href="/TeacherCourse/AddCourse/"> Yeni Kurs</a>
+
+
+    <hr />
+
+
+    <div class="row">
+        @foreach (var i in Model)
+        {
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="@i.CourseImgUrl" height="150" class="card-img-top" alt="@i.CourseName">
+                    <div class="card-body">
+                        <h5 class="card-title text-bold">@i.CourseName</h5>
+                        
+                        <p class="card-text">@i.CourseDes</p>
+
+                    </div>
+                    <div class="card-body">
+                        <hr />
+                        <div class="row">
+
+
+                            <div class="col-md-2 mr-1 ml-2">
+                                <a href="/ListCourse/DeleteCourse/@i.CourseId/" class="btn btn-danger ">Sil</a>
+                            </div>
+                           
+                            <div class="col-md-4">
+                                <a href="/TeacherCourse/DetailCourse/@i.CourseId" class="btn btn-secondary ">Detay</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+
+    </div>
+
+
+</div>
+
+

@@ -1,0 +1,28 @@
+﻿@model List<Message>
+@{
+    ViewData["Title"] = "GetInboxTeacher";
+    Layout = "~/Views/Shared/Teacher/_TeacherLayout.cshtml";
+}
+
+<h1>Gelen Kutusu</h1>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Gönderen</th>
+        <th>Konu</th>
+        <th>Mesaj</th>
+        <th>Tarih</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.MessageID</td>
+            <td>@item.SenderID</td>
+            <td>@item.Subject</td>
+            <td>@item.MessageDetails</td>
+            <td>@item.MessageDate</td>
+            <td>@item.MessageStatus</td>
+        </tr>
+    }
+</table>

@@ -9,5 +9,6 @@ namespace CasgemEgitim.DataAccessLayer.Abstract
 {
     public interface IStudentDal:IGenericDal<Student>
     {
+       
     }
 }
