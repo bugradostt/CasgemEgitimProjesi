@@ -16,8 +16,9 @@ namespace CasgemEgitim.EntityLayer.Concrete
         public string TeacherUsername { get; set; }
         public string TeacherPassword { get; set; }
         public string TeacherImageUrl { get; set; }
-        public virtual ICollection<Message> TeacherSender { get; set; }
-        public virtual ICollection<Message> TeacherReceiver { get; set; }
+        public ICollection<Message> SentMessages { get; set; }
+        public ICollection<Message> ReceivedMessages { get; set; }
+        public string Role { get; set; }
 
     }
 }

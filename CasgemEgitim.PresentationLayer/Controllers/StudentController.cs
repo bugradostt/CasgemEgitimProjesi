@@ -8,15 +8,20 @@ namespace CasgemEgitim.PresentationLayer.Controllers
     {
         private readonly IStudentService _studentService;
         private readonly ICourseService _courseService;
+        private readonly ICourseDetailService _courseDetailService;
 
-        public StudentController(IStudentService studentService, ICourseService courseService = null)
+        public StudentController(IStudentService studentService, ICourseService courseService = null, ICourseDetailService courseDetailService = null)
         {
             _studentService = studentService;
             _courseService = courseService;
+            _courseDetailService = courseDetailService;
         }
 
         public IActionResult Index()
         {
+            var userName = HttpContext.Session.GetString("username");
+            var s = _studentService.TGetStudentByUsername(userName);
+            ViewBag.st = s;
             var values = _studentService.TGetList();
             return View(values);
         }
@@ -65,6 +70,15 @@ namespace CasgemEgitim.PresentationLayer.Controllers
             values.Password = student.Password;
             _studentService.TUpdate(values);
             return RedirectToAction("Index");
+        }
+
+        //kurs Detay işlemleri
+
+        public IActionResult ListCourseDetail(int id)
+        {
+            ViewBag.CourseName = _courseDetailService.TGetCourseByIdWithCourseName(id);
+            var values = _courseDetailService.TGetCoursesWithById(id);
+            return View(values);
         }
     }
 }

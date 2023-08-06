@@ -10,7 +10,7 @@ namespace CasgemEgitim.DataAccessLayer.Abstract
     public interface ICourseDal : IGenericDal<Course>
     {
         public List<Course> GetCoursesWithTeacher();
-        public List<Course> GetCoursesWithUserTeacher();
+        public List<Course> GetCoursesWithUserTeacher(int id);
         public List<Course> GetCoursesWithUserStudent(int id);
     }
 

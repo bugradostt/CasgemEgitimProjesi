@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CasgemEgitim.DataAccessLayer.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20230801191816_mig_messages_update")]
-    partial class mig_messages_update
+    [Migration("20230806054457_mig_first")]
+    partial class mig_first
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -166,6 +166,10 @@ namespace CasgemEgitim.DataAccessLayer.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Role")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("StudentName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -190,6 +194,10 @@ namespace CasgemEgitim.DataAccessLayer.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TeachertId"), 1L, 1);
+
+                    b.Property<string>("Role")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TeacherImageUrl")
                         .IsRequired()
@@ -266,17 +274,29 @@ namespace CasgemEgitim.DataAccessLayer.Migrations
 
             modelBuilder.Entity("CasgemEgitim.EntityLayer.Concrete.Message", b =>
                 {
-                    b.HasOne("CasgemEgitim.EntityLayer.Concrete.Teacher", "ReceiverUser")
-                        .WithMany("TeacherReceiver")
+                    b.HasOne("CasgemEgitim.EntityLayer.Concrete.Student", "ReceiverStudent")
+                        .WithMany("ReceiverMessages")
                         .HasForeignKey("ReceiverID");
 
-                    b.HasOne("CasgemEgitim.EntityLayer.Concrete.Teacher", "SenderUser")
-                        .WithMany("TeacherSender")
+                    b.HasOne("CasgemEgitim.EntityLayer.Concrete.Teacher", "ReceiverTeacher")
+                        .WithMany("ReceivedMessages")
+                        .HasForeignKey("ReceiverID");
+
+                    b.HasOne("CasgemEgitim.EntityLayer.Concrete.Student", "SenderStudent")
+                        .WithMany("SentMessages")
                         .HasForeignKey("SenderID");
 
-                    b.Navigation("ReceiverUser");
+                    b.HasOne("CasgemEgitim.EntityLayer.Concrete.Teacher", "SenderTeacher")
+                        .WithMany("SentMessages")
+                        .HasForeignKey("SenderID");
 
-                    b.Navigation("SenderUser");
+                    b.Navigation("ReceiverStudent");
+
+                    b.Navigation("ReceiverTeacher");
+
+                    b.Navigation("SenderStudent");
+
+                    b.Navigation("SenderTeacher");
                 });
 
             modelBuilder.Entity("CasgemEgitim.EntityLayer.Concrete.Movement", b =>
@@ -329,11 +349,18 @@ namespace CasgemEgitim.DataAccessLayer.Migrations
                     b.Navigation("Videos");
                 });
 
+            modelBuilder.Entity("CasgemEgitim.EntityLayer.Concrete.Student", b =>
+                {
+                    b.Navigation("ReceiverMessages");
+
+                    b.Navigation("SentMessages");
+                });
+
             modelBuilder.Entity("CasgemEgitim.EntityLayer.Concrete.Teacher", b =>
                 {
-                    b.Navigation("TeacherReceiver");
+                    b.Navigation("ReceivedMessages");
 
-                    b.Navigation("TeacherSender");
+                    b.Navigation("SentMessages");
                 });
 #pragma warning restore 612, 618
         }

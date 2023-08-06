@@ -1,0 +1,88 @@
+﻿@model LoginVm
+
+@{
+    Layout = null;
+}
+
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Login">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Username" class="control-label"></label>
+                <input asp-for="Username" class="form-control" />
+                <span asp-validation-for="Username" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+@*<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+	<title>Merged Forms Page Responsive Widget Template :: W3layouts</title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<meta name="keywords"
+		  content="Merged Forms Page Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<!-- //Meta tag Keywords -->
+	<link rel="stylesheet" href="~/merged-forms-web_Free05-10-2019_628783826/web/css/login.css" type="text/css" media="all" /><!-- Style-CSS -->
+</head>
+<body>
+	<!-- /form-26-section -->
+	<section class="form-26">
+		<div class="form-26-mian">
+			<div class="layer">
+				<div class="wrapper">
+					<div class="form-inner-cont">
+						<div class="forms-26-info">
+							<h2>Giriş Yap</h2>
+							<p>Eğitimin ışığında aydınlık bir gelecek inşa edin!</p>
+						</div>
+
+						<div class="form-right-inf">
+							<form asp-action="Login" class="signin-form">
+								<div class="forms-gds">
+									<div class="form-input">
+										<input type="text" name="" placeholder="Kullanıcı Adı" required asp-for="Username" />
+									</div>
+									<div class="form-input">
+										<input type="password" name="" placeholder="Password" required asp-for="Password" />
+									</div>
+									<div class="form-input"><button class="btn">Giriş Yap</button></div>
+								</div>
+								<h6 class="already"> Hesabınız yok mu? <a href="~/merged-forms-web_Free05-10-2019_628783826/web/register.html"><span>Kaydol<span></span></span></a></h6>
+							</form>
+
+						</div>
+						<div class="copyright text-center">
+							<p>
+								© 2019 Merged Forms. All rights reserved | Design by <a href="http://w3layouts.com/"
+																		target="_blank">W3Layouts</a>
+							</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- //form-26-section -->
+</body>
+</html>
+*@

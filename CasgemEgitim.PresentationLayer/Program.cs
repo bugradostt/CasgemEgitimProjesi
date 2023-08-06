@@ -12,6 +12,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<ICourseDal, EfCourseRepository>();
 builder.Services.AddScoped<ICourseService, CourseManager>();
 
+builder.Services.AddScoped<ICourseDetailDal, EfCourseDetailRepository>();
+builder.Services.AddScoped<ICourseDetailService,CourseDetailManager>();
+
 builder.Services.AddScoped<IStudentDal, EfStudentRepository>();
 builder.Services.AddScoped<IStudentService, StudentManager>();
 
@@ -25,6 +28,8 @@ builder.Services.AddScoped<IMessageService, MessageManager>();
 
 builder.Services.AddDbContext<Context>();
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddSession();
 
 var app = builder.Build();
 
@@ -45,6 +50,8 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=VitrinHome}/{action=Index}/{id?}");
+    pattern: "{controller=User}/{action=Login}/{id?}");
 
+
+app.UseSession();
 app.Run();

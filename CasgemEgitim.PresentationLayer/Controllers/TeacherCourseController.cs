@@ -1,6 +1,7 @@
 ﻿using CasgemEgitim.BusinessLayer.Abstract;
 using CasgemEgitim.EntityLayer.Concrete;
 using CasgemEgitim.ModelViewLayer.ModelView.Course;
+using CasgemEgitim.ModelViewLayer.ModelView.Video;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CasgemEgitim.PresentationLayer.Controllers
@@ -8,17 +9,19 @@ namespace CasgemEgitim.PresentationLayer.Controllers
     public class TeacherCourseController : Controller
     {
         readonly ICourseService _courseService;
+        readonly ICourseDetailService _courseDetailService;
 
-        public TeacherCourseController(ICourseService courseService)
+        public TeacherCourseController(ICourseService courseService, ICourseDetailService courseDetailService)
         {
             _courseService = courseService;
+            _courseDetailService = courseDetailService;
         }
 
         //Kurs
         public IActionResult ListCourse()
         {
             //var values = _courseService.TGetList().OrderByDescending(x => x.CourseId).ToList();
-            var values = _courseService.TGetCoursesWithUserTeacher().OrderByDescending(x => x.CourseId).ToList();
+            var values = _courseService.TGetCoursesWithUserTeacher(2).OrderByDescending(x => x.CourseId).ToList();
             return View(values);
         }
 
@@ -37,7 +40,7 @@ namespace CasgemEgitim.PresentationLayer.Controllers
         [HttpPost]
         public IActionResult AddCourse(Course p)
         {
-            p.TeacherId = 1;
+            p.TeacherId = 2;
             _courseService.TInsert(p);
             return RedirectToAction("ListCourse");
         }
@@ -55,6 +58,60 @@ namespace CasgemEgitim.PresentationLayer.Controllers
             p.TeacherId = 1;
             _courseService.TUpdate(p);
             return RedirectToAction("ListCourse");
+        }
+
+
+        //Kurs detay işlemleri
+
+        public IActionResult ListCourseDetail(int id)
+        {
+            ViewBag.CourseId = id;
+            ViewBag.CourseName = _courseDetailService.TGetCourseByIdWithCourseName(id);
+            var values = _courseDetailService.TGetCoursesWithById(id);
+            return View(values);
+        }
+
+        [HttpPost]
+        public IActionResult AddCourseDetail(CreateVideoMV p)
+        {
+            Video v = new Video()
+            {
+                CourseId = p.CourseId,
+                VideoUrl = p.VideoUrl,
+                VideoName = p.VideoName
+            };
+           
+            _courseDetailService.TInsert(v);
+            return Redirect($"/TeacherCourse/ListCourseDetail/{p.CourseId}");
+        }
+
+        public IActionResult DeleteCourseDetail(DeleteVideoMV p)
+        {
+            Video v = new Video()
+            {
+                VideoId = p.VideoId,
+                CourseId = p.CourseId,
+                
+            };
+            var foundId = _courseDetailService.TGetById(p.VideoId);
+            _courseDetailService.TDelete(foundId);
+            return Redirect($"/TeacherCourse/ListCourseDetail/{p.CourseId}");
+        }
+
+
+        [HttpPost]
+        public IActionResult UpdateCourseDetail(UpdateVideoMV p)
+        {
+            Video v = new Video()
+            {
+                VideoId = p.VideoId,
+                CourseId = p.CourseId,
+                VideoUrl = p.VideoUrl,
+                VideoName = p.VideoName
+            };
+          
+            _courseDetailService.TUpdate(v);
+            return Redirect($"/TeacherCourse/ListCourseDetail/{p.CourseId}");
         }
     }
 }

@@ -9,10 +9,8 @@
 <div class="container">
     <br />
 
-    <h1>Kurs Listesi</h1>
-    <br />
-    <a class="btn btn-success" href="/TeacherCourse/AddCourse/"> Yeni Kurs</a>
-
+    <h1>Alınan Kurs Listesi</h1>
+ 
 
     <hr />
 
@@ -31,18 +29,7 @@
                     </div>
                     <div class="card-body">
                         <hr />
-                        <div class="row">
-
-
-                            <div class="col-md-2 mr-1 ml-2">
-                                <a href="/ListCourse/DeleteCourse/@i.CourseId/" class="btn btn-danger ">Sil</a>
-                            </div>
-                           
-                            <div class="col-md-4">
-                                <a href="/TeacherCourse/DetailCourse/@i.CourseId" class="btn btn-secondary ">Detay</a>
-                            </div>
-
-                        </div>
+                        <a href="/Student/ListCourseDetail/@i.CourseId" class="btn btn-info  form-control">Kursu İzle</a>
                     </div>
                 </div>
             </div>

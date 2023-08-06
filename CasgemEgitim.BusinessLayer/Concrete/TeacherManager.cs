@@ -33,6 +33,11 @@ namespace CasgemEgitim.BusinessLayer.Concrete
             return _teacherDal.GetList();
         }
 
+        public async Task<Teacher> TGetTeacherByUsername(string username)
+        {
+            return await _teacherDal.GetTeacherByUsername(username);
+        }
+
         public void TInsert(Teacher t)
         {
             _teacherDal.Insert(t);

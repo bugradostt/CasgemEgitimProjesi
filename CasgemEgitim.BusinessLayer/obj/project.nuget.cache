@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AtKkBv5LOts5TbqGrWdK8ie1L8qILN6JSxW/Heseideu1jdXv9Q5B9Rt1S9dnyBLh1xtuH0wz/Lf1dUpr03mRQ==",
+  "dgSpecHash": "amxS44eJU1on3mCFu3wEY11slAOe5rH5Jwar8yP1YCMaeGm1Ff2yDqV98fW719Gka94XFg7s3pqjwrWvGWpoqQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\CasgemEgitimProjesi\\CasgemEgitim.BusinessLayer\\CasgemEgitim.BusinessLayer.csproj",
+  "projectFilePath": "C:\\Users\\bugra\\Desktop\\CasgemEgitimProjesi-master\\CasgemEgitim.BusinessLayer\\CasgemEgitim.BusinessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bugra\\.nuget\\packages\\fluentvalidation\\11.6.0\\fluentvalidation.11.6.0.nupkg.sha512",
     "C:\\Users\\bugra\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",

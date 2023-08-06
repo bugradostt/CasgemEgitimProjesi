@@ -18,6 +18,11 @@ namespace CasgemEgitim.BusinessLayer.Concrete
             _studentDal = studentDal;
         }
 
+        public async Task<Student> TGetStudentByUsername(string username)
+        {
+            return await _studentDal.GetStudentByUsername(username);
+        }
+
         public void TDelete(Student t)
         {
             _studentDal.Delete(t);

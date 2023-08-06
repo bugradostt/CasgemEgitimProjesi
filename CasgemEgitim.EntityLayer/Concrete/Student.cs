@@ -16,6 +16,10 @@ namespace CasgemEgitim.EntityLayer.Concrete
         public string Password { get; set; }
         public string ImageUrl { get; set; }
         public List<Course> Courses { get; set; }
-       
+        public virtual ICollection<Message> SentMessages { get; set; }
+        public virtual ICollection<Message> ReceiverMessages { get; set; }
+        public string Role { get; set; }
+
+
     }
 }

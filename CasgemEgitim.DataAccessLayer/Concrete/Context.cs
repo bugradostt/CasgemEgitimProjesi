@@ -21,26 +21,32 @@ namespace CasgemEgitim.DataAccessLayer.Concrete
 
 
             //Selvi
-            //optionsBuilder.UseSqlServer("Data Source=DESKTOP-U4DC5DI; initial catalog=CasgemEgitimProjesiDb; integrated security=true");
+          //optionsBuilder.UseSqlServer("Data Source=DESKTOP-U4DC5DI; initial catalog=CasgemEgitimProjesi1Db; integrated security=true");
 
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Message>()
-               .HasOne(x => x.SenderUser)
-               .WithMany(y => y.TeacherSender)
+               .HasOne(x => x.SenderStudent)
+               .WithMany(y => y.SentMessages)
                .HasForeignKey(z => z.SenderID)
                .OnDelete(DeleteBehavior.ClientSetNull);
 
             modelBuilder.Entity<Message>()
-               .HasOne(x => x.ReceiverUser)
-               .WithMany(y => y.TeacherReceiver)
-               .HasForeignKey(z => z.ReceiverID)
-               .OnDelete(DeleteBehavior.ClientSetNull);
-            base.OnModelCreating(modelBuilder);
-            
+             .HasOne(m => m.ReceiverStudent)
+             .WithMany(s => s.ReceiverMessages)
+             .HasForeignKey(m => m.ReceiverID);
 
+            modelBuilder.Entity<Message>()
+                .HasOne(m => m.SenderTeacher)
+                .WithMany(t => t.SentMessages)
+                .HasForeignKey(m => m.SenderID);
+
+            modelBuilder.Entity<Message>()
+                .HasOne(m => m.ReceiverTeacher)
+                .WithMany(t => t.ReceivedMessages)
+                .HasForeignKey(m => m.ReceiverID);
         }
 
         public DbSet<Contact> Contacts{ get; set; }

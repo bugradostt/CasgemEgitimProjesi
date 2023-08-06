@@ -18,6 +18,15 @@ namespace CasgemEgitim.BusinessLayer.Concrete
             _messageDal = messageDal;
         }
 
+        public List<Message> GetMessagesByStudentID(int studentID)
+        {
+            return _messageDal.GetMessagesByStudentID(studentID);
+        }
+
+        public List<Message> GetMessagesByTeacherID(int teacherID)
+        {
+            return _messageDal.GetMessagesByTeacherID(teacherID);
+        }
 
         public void TDelete(Message t)
         {

@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 namespace CasgemEgitim.BusinessLayer.Abstract
 {
     public interface ITeacherService: IGenericService<Teacher>
-    { 
+    {
+        Task<Teacher> TGetTeacherByUsername(string username);
     }
 }

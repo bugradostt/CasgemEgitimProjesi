@@ -1,15 +1,15 @@
-C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\CasgemEgitimProjesi\CasgemEgitim.ModelViewLayer\bin\Debug\net6.0\CasgemEgitim.ModelViewLayer.deps.json
-C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\CasgemEgitimProjesi\CasgemEgitim.ModelViewLayer\bin\Debug\net6.0\CasgemEgitim.ModelViewLayer.dll
-C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\CasgemEgitimProjesi\CasgemEgitim.ModelViewLayer\bin\Debug\net6.0\CasgemEgitim.ModelViewLayer.pdb
-C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\CasgemEgitimProjesi\CasgemEgitim.ModelViewLayer\bin\Debug\net6.0\CasgemEgitim.EntityLayer.dll
-C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\CasgemEgitimProjesi\CasgemEgitim.ModelViewLayer\bin\Debug\net6.0\CasgemEgitim.EntityLayer.pdb
-C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\CasgemEgitimProjesi\CasgemEgitim.ModelViewLayer\obj\Debug\net6.0\CasgemEgitim.ModelViewLayer.csproj.AssemblyReference.cache
-C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\CasgemEgitimProjesi\CasgemEgitim.ModelViewLayer\obj\Debug\net6.0\CasgemEgitim.ModelViewLayer.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\CasgemEgitimProjesi\CasgemEgitim.ModelViewLayer\obj\Debug\net6.0\CasgemEgitim.ModelViewLayer.AssemblyInfoInputs.cache
-C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\CasgemEgitimProjesi\CasgemEgitim.ModelViewLayer\obj\Debug\net6.0\CasgemEgitim.ModelViewLayer.AssemblyInfo.cs
-C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\CasgemEgitimProjesi\CasgemEgitim.ModelViewLayer\obj\Debug\net6.0\CasgemEgitim.ModelViewLayer.csproj.CoreCompileInputs.cache
-C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\CasgemEgitimProjesi\CasgemEgitim.ModelViewLayer\obj\Debug\net6.0\CasgemEgitim.ModelViewLayer.csproj.CopyComplete
-C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\CasgemEgitimProjesi\CasgemEgitim.ModelViewLayer\obj\Debug\net6.0\CasgemEgitim.ModelViewLayer.dll
-C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\CasgemEgitimProjesi\CasgemEgitim.ModelViewLayer\obj\Debug\net6.0\refint\CasgemEgitim.ModelViewLayer.dll
-C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\CasgemEgitimProjesi\CasgemEgitim.ModelViewLayer\obj\Debug\net6.0\CasgemEgitim.ModelViewLayer.pdb
-C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\CasgemEgitimProjesi\CasgemEgitim.ModelViewLayer\obj\Debug\net6.0\ref\CasgemEgitim.ModelViewLayer.dll
+C:\Users\bugra\Desktop\CasgemEgitimProjesi-master\CasgemEgitim.ModelViewLayer\bin\Debug\net6.0\CasgemEgitim.ModelViewLayer.deps.json
+C:\Users\bugra\Desktop\CasgemEgitimProjesi-master\CasgemEgitim.ModelViewLayer\bin\Debug\net6.0\CasgemEgitim.ModelViewLayer.dll
+C:\Users\bugra\Desktop\CasgemEgitimProjesi-master\CasgemEgitim.ModelViewLayer\bin\Debug\net6.0\CasgemEgitim.ModelViewLayer.pdb
+C:\Users\bugra\Desktop\CasgemEgitimProjesi-master\CasgemEgitim.ModelViewLayer\bin\Debug\net6.0\CasgemEgitim.EntityLayer.dll
+C:\Users\bugra\Desktop\CasgemEgitimProjesi-master\CasgemEgitim.ModelViewLayer\bin\Debug\net6.0\CasgemEgitim.EntityLayer.pdb
+C:\Users\bugra\Desktop\CasgemEgitimProjesi-master\CasgemEgitim.ModelViewLayer\obj\Debug\net6.0\CasgemEgitim.ModelViewLayer.csproj.AssemblyReference.cache
+C:\Users\bugra\Desktop\CasgemEgitimProjesi-master\CasgemEgitim.ModelViewLayer\obj\Debug\net6.0\CasgemEgitim.ModelViewLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bugra\Desktop\CasgemEgitimProjesi-master\CasgemEgitim.ModelViewLayer\obj\Debug\net6.0\CasgemEgitim.ModelViewLayer.AssemblyInfoInputs.cache
+C:\Users\bugra\Desktop\CasgemEgitimProjesi-master\CasgemEgitim.ModelViewLayer\obj\Debug\net6.0\CasgemEgitim.ModelViewLayer.AssemblyInfo.cs
+C:\Users\bugra\Desktop\CasgemEgitimProjesi-master\CasgemEgitim.ModelViewLayer\obj\Debug\net6.0\CasgemEgitim.ModelViewLayer.csproj.CoreCompileInputs.cache
+C:\Users\bugra\Desktop\CasgemEgitimProjesi-master\CasgemEgitim.ModelViewLayer\obj\Debug\net6.0\CasgemEgitim.ModelViewLayer.csproj.CopyComplete
+C:\Users\bugra\Desktop\CasgemEgitimProjesi-master\CasgemEgitim.ModelViewLayer\obj\Debug\net6.0\CasgemEgitim.ModelViewLayer.dll
+C:\Users\bugra\Desktop\CasgemEgitimProjesi-master\CasgemEgitim.ModelViewLayer\obj\Debug\net6.0\refint\CasgemEgitim.ModelViewLayer.dll
+C:\Users\bugra\Desktop\CasgemEgitimProjesi-master\CasgemEgitim.ModelViewLayer\obj\Debug\net6.0\CasgemEgitim.ModelViewLayer.pdb
+C:\Users\bugra\Desktop\CasgemEgitimProjesi-master\CasgemEgitim.ModelViewLayer\obj\Debug\net6.0\ref\CasgemEgitim.ModelViewLayer.dll

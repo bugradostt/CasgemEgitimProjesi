@@ -17,8 +17,10 @@ namespace CasgemEgitim.EntityLayer.Concrete
         public string MessageDetails { get; set; }
         public DateTime MessageDate { get; set; }
         public bool MessageStatus { get; set; }
-        public Teacher SenderUser { get; set; }
-        public Teacher ReceiverUser { get; set; }
+        public Student SenderStudent { get; set; }
+        public Student ReceiverStudent { get; set; }
+        public Teacher SenderTeacher { get; set; }
+        public Teacher ReceiverTeacher { get; set; }
 
     }
 }

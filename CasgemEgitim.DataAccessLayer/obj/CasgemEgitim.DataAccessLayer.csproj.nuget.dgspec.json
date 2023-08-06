@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\CasgemEgitimProjesi\\CasgemEgitim.DataAccessLayer\\CasgemEgitim.DataAccessLayer.csproj": {}
+    "C:\\Users\\bugra\\Desktop\\CasgemEgitimProjesi-master\\CasgemEgitim.DataAccessLayer\\CasgemEgitim.DataAccessLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\CasgemEgitimProjesi\\CasgemEgitim.DataAccessLayer\\CasgemEgitim.DataAccessLayer.csproj": {
+    "C:\\Users\\bugra\\Desktop\\CasgemEgitimProjesi-master\\CasgemEgitim.DataAccessLayer\\CasgemEgitim.DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\CasgemEgitimProjesi\\CasgemEgitim.DataAccessLayer\\CasgemEgitim.DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\bugra\\Desktop\\CasgemEgitimProjesi-master\\CasgemEgitim.DataAccessLayer\\CasgemEgitim.DataAccessLayer.csproj",
         "projectName": "CasgemEgitim.DataAccessLayer",
-        "projectPath": "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\CasgemEgitimProjesi\\CasgemEgitim.DataAccessLayer\\CasgemEgitim.DataAccessLayer.csproj",
+        "projectPath": "C:\\Users\\bugra\\Desktop\\CasgemEgitimProjesi-master\\CasgemEgitim.DataAccessLayer\\CasgemEgitim.DataAccessLayer.csproj",
         "packagesPath": "C:\\Users\\bugra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\CasgemEgitimProjesi\\CasgemEgitim.DataAccessLayer\\obj\\",
+        "outputPath": "C:\\Users\\bugra\\Desktop\\CasgemEgitimProjesi-master\\CasgemEgitim.DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bugra\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\CasgemEgitimProjesi\\CasgemEgitim.EntityLayer\\CasgemEgitim.EntityLayer.csproj": {
-                "projectPath": "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\CasgemEgitimProjesi\\CasgemEgitim.EntityLayer\\CasgemEgitim.EntityLayer.csproj"
+              "C:\\Users\\bugra\\Desktop\\CasgemEgitimProjesi-master\\CasgemEgitim.EntityLayer\\CasgemEgitim.EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\bugra\\Desktop\\CasgemEgitimProjesi-master\\CasgemEgitim.EntityLayer\\CasgemEgitim.EntityLayer.csproj"
               }
             }
           }
@@ -85,14 +85,14 @@
         }
       }
     },
-    "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\CasgemEgitimProjesi\\CasgemEgitim.EntityLayer\\CasgemEgitim.EntityLayer.csproj": {
+    "C:\\Users\\bugra\\Desktop\\CasgemEgitimProjesi-master\\CasgemEgitim.EntityLayer\\CasgemEgitim.EntityLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\CasgemEgitimProjesi\\CasgemEgitim.EntityLayer\\CasgemEgitim.EntityLayer.csproj",
+        "projectUniqueName": "C:\\Users\\bugra\\Desktop\\CasgemEgitimProjesi-master\\CasgemEgitim.EntityLayer\\CasgemEgitim.EntityLayer.csproj",
         "projectName": "CasgemEgitim.EntityLayer",
-        "projectPath": "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\CasgemEgitimProjesi\\CasgemEgitim.EntityLayer\\CasgemEgitim.EntityLayer.csproj",
+        "projectPath": "C:\\Users\\bugra\\Desktop\\CasgemEgitimProjesi-master\\CasgemEgitim.EntityLayer\\CasgemEgitim.EntityLayer.csproj",
         "packagesPath": "C:\\Users\\bugra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\CasgemEgitimProjesi\\CasgemEgitim.EntityLayer\\obj\\",
+        "outputPath": "C:\\Users\\bugra\\Desktop\\CasgemEgitimProjesi-master\\CasgemEgitim.EntityLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bugra\\AppData\\Roaming\\NuGet\\NuGet.Config",

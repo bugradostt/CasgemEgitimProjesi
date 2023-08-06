@@ -43,9 +43,9 @@ namespace CasgemEgitim.DataAccessLayer.EntityFramework
             return courses;
 
         }
-        public List<Course> GetCoursesWithUserTeacher()
+        public List<Course> GetCoursesWithUserTeacher(int id)
         {
-            return c.Courses.Where(x=>x.TeacherId==1).ToList();
+            return c.Courses.Where(x=>x.TeacherId==id).ToList();
         }
     }
 }

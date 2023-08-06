@@ -17,6 +17,7 @@ namespace CasgemEgitim.PresentationLayer.Controllers
         {
             var endCourseList = _courseService.TGetCoursesWithTeacher().OrderByDescending(x => x.CourseId).Take(6).ToList(); 
             return View(endCourseList);
+       
         }
     }
 }

@@ -11,6 +11,7 @@ namespace CasgemEgitim.EntityLayer.Concrete
         public int VideoId { get; set; }
         public int CourseId{ get; set; }
         public string VideoUrl{ get; set; }
+        public string VideoName{ get; set; }
         public Course Course { get; set; }
 
     }

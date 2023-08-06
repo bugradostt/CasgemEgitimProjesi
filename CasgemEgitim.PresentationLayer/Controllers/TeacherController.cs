@@ -39,6 +39,7 @@ namespace CasgemEgitim.PresentationLayer.Controllers
         [HttpPost]
         public IActionResult AddTeacher(Teacher teacher)
         {
+            teacher.Role = "A";
             _teacherService.TInsert(teacher);
             return RedirectToAction("ListTeacher");
         }

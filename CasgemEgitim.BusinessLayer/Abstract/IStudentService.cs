@@ -9,5 +9,6 @@ namespace CasgemEgitim.BusinessLayer.Abstract
 {
     public interface IStudentService:IGenericService<Student>
     {
+        Task<Student> TGetStudentByUsername(string username);
     }
 }

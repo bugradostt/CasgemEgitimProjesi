@@ -1,0 +1,22 @@
+﻿@model Message
+@{
+    ViewData["Title"] = "SendMessage";
+    Layout = "~/Views/Shared/Student/_StudentLayout.cshtml";
+}
+
+<h1>Yeni Mesaj</h1>
+
+<div class="container">
+    <form method="post">
+        <label>Alıcı</label>
+        <input type="text" asp-for="ReceiverID" class="form-control" />
+        <br />
+        <label>Konu</label>
+        <input type="text" asp-for="Subject" class="form-control" />
+        <br />
+        <label>Mesaj</label>
+        <input type="text" asp-for="MessageDetails" class="form-control" />
+        <br />
+        <button class="btn btn-success">Gönder</button>
+    </form>
+</div>

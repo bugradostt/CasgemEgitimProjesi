@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace CasgemEgitim.DataAccessLayer.Migrations
 {
-    public partial class mig_messages : Migration
+    public partial class mig_first : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -26,24 +26,6 @@ namespace CasgemEgitim.DataAccessLayer.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Messages",
-                columns: table => new
-                {
-                    MessageID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    SenderID = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ReceiverID = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Subject = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    MessageDetails = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    MessageDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    MessageStatus = table.Column<bool>(type: "bit", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Messages", x => x.MessageID);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Students",
                 columns: table => new
                 {
@@ -54,7 +36,8 @@ namespace CasgemEgitim.DataAccessLayer.Migrations
                     Username = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Mail = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Role = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -71,7 +54,8 @@ namespace CasgemEgitim.DataAccessLayer.Migrations
                     TeacherSurname = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     TeacherUsername = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     TeacherPassword = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    TeacherImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    TeacherImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Role = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -99,6 +83,44 @@ namespace CasgemEgitim.DataAccessLayer.Migrations
                         principalTable: "Teachers",
                         principalColumn: "TeachertId",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Messages",
+                columns: table => new
+                {
+                    MessageID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    SenderID = table.Column<int>(type: "int", nullable: true),
+                    ReceiverID = table.Column<int>(type: "int", nullable: true),
+                    Subject = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    MessageDetails = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    MessageDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    MessageStatus = table.Column<bool>(type: "bit", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Messages", x => x.MessageID);
+                    table.ForeignKey(
+                        name: "FK_Messages_Students_ReceiverID",
+                        column: x => x.ReceiverID,
+                        principalTable: "Students",
+                        principalColumn: "StudentId");
+                    table.ForeignKey(
+                        name: "FK_Messages_Students_SenderID",
+                        column: x => x.SenderID,
+                        principalTable: "Students",
+                        principalColumn: "StudentId");
+                    table.ForeignKey(
+                        name: "FK_Messages_Teachers_ReceiverID",
+                        column: x => x.ReceiverID,
+                        principalTable: "Teachers",
+                        principalColumn: "TeachertId");
+                    table.ForeignKey(
+                        name: "FK_Messages_Teachers_SenderID",
+                        column: x => x.SenderID,
+                        principalTable: "Teachers",
+                        principalColumn: "TeachertId");
                 });
 
             migrationBuilder.CreateTable(
@@ -180,6 +202,16 @@ namespace CasgemEgitim.DataAccessLayer.Migrations
                 name: "IX_CourseStudent_StudentsStudentId",
                 table: "CourseStudent",
                 column: "StudentsStudentId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Messages_ReceiverID",
+                table: "Messages",
+                column: "ReceiverID");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Messages_SenderID",
+                table: "Messages",
+                column: "SenderID");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Movements_CourseId",

@@ -9,5 +9,7 @@ namespace CasgemEgitim.DataAccessLayer.Abstract
 {
     public interface IMessageDal:IGenericDal<Message>
     {
+        List<Message> GetMessagesByStudentID(int studentID);
+        List<Message> GetMessagesByTeacherID(int teacherID);
     }
 }
