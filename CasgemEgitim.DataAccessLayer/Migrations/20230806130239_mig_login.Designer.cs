@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CasgemEgitim.DataAccessLayer.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20230806054457_mig_first")]
-    partial class mig_first
+    [Migration("20230806130239_mig_login")]
+    partial class mig_login
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -234,6 +234,10 @@ namespace CasgemEgitim.DataAccessLayer.Migrations
 
                     b.Property<int>("CourseId")
                         .HasColumnType("int");
+
+                    b.Property<string>("VideoName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("VideoUrl")
                         .IsRequired()

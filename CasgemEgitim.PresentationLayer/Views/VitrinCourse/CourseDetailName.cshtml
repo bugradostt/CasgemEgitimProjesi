@@ -1,0 +1,26 @@
+﻿@model List<CasgemEgitim.EntityLayer.Concrete.Video>
+
+<div class="row">
+
+    <div class="col-lg-2"> </div>
+    <div class="col-lg-8">
+        <h3>Kurs İçeriği</h3>
+        <br />
+        <br />
+
+        <table class="table table-striped">
+           
+
+           @foreach (var i in Model)
+            {
+
+                <tr>
+                    <th>Kurs Fiyatı</th>
+                </tr>
+
+            }
+
+        </table>
+    </div>
+    <div class="col-lg-2"></div>
+</div>

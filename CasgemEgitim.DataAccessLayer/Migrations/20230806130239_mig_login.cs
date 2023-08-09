@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace CasgemEgitim.DataAccessLayer.Migrations
 {
-    public partial class mig_first : Migration
+    public partial class mig_login : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -180,7 +180,8 @@ namespace CasgemEgitim.DataAccessLayer.Migrations
                     VideoId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     CourseId = table.Column<int>(type: "int", nullable: false),
-                    VideoUrl = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    VideoUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    VideoName = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {

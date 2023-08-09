@@ -14,6 +14,14 @@ namespace CasgemEgitim.DataAccessLayer.EntityFramework
     public class EfCourseRepository : GenericRepositoriy<Course>, ICourseDal
     {
         Context c = new Context();
+
+        public Course GetCoursesByIdWithTeacher(int id)
+        {
+
+            return c.Courses.Include(x => x.Teacher).Where(x=>x.CourseId==id).FirstOrDefault();
+
+        }
+
         public List<Course> GetCoursesWithTeacher()
         {
 

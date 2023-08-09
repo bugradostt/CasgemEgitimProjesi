@@ -14,5 +14,7 @@ namespace CasgemEgitim.BusinessLayer.Abstract
         public List<Course> TGetCoursesWithUserTeacher(int id);
 
         public List<Course> TGetCoursesWithUserStudent(int id);
+
+        public Course TGetCoursesByIdWithTeacher(int id);
     }
 }
