@@ -40,6 +40,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVxTZW5kTWVzc2FnZVRlYWNoZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/bugra/Desktop/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/Shared/Components/_CourseDetailCourseName/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0NvdXJzZURldGFpbENvdXJzZU5hbWVcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/bugra/Desktop/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -126,6 +130,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/bugra/Desktop/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/VitrinContact/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVml0cmluQ29udGFjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bugra/Desktop/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/VitrinCourse/CourseBuy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVml0cmluQ291cnNlXENvdXJzZUJ1eS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/bugra/Desktop/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/VitrinCourse/CourseDetail.cshtml]

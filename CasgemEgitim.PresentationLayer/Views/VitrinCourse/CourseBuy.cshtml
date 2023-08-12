@@ -1,0 +1,158 @@
+﻿@model CasgemEgitim.EntityLayer.Concrete.Course
+
+
+@{
+    Layout = "~/Views/Shared/Vitrin/_VitrinLayout.cshtml";
+}
+
+<link src="https://cdn.tailwindcss.com/3.0.12"/>
+
+<link src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" />
+<link src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" />
+<link src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<!-- about breadcrumb -->
+<section class="w3l-breadcrumb">
+    <div class="breadcrumb-bg breadcrumb-bg-about py-5">
+        <div class="container pt-lg-5 pt-3 p-lg-4 pb-3">
+            <h2 class="title mt-5 pt-lg-5 pt-sm-3">@Model.CourseName</h2>
+            <ul class="breadcrumbs-custom-path pb-sm-5 pb-4 mt-2 text-center mb-md-5">
+                <li><a href="/VitrinCourse/Index/">Kurs Detayı</a></li>
+                <li class="active"> / Kursu Satın Al </li>
+            </ul>
+        </div>
+    </div>
+    <div class="waveWrapper waveAnimation">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+            <path d="M-5.07,73.52 C149.99,150.00 299.66,-102.13 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none;"></path>
+        </svg>
+    </div>
+</section>
+<!-- //about breadcrumb -->
+
+
+<style>
+    .warning {
+        border-bottom: 1px solid red !important
+    }
+</style>
+
+<div class="container-fluild">
+    <div class="flex justify-center items-center min-h-screen bg-blue-300">
+        <div class="h-auto w-80 bg-white p-3 rounded-lg">
+
+            <form method="post">
+                <input type="hidden" value="@Model.CourseId" name="CourseId" />
+                <div class="row">
+
+                    <div class="col-lg-2"></div>
+
+                    <div class="col-lg-8">
+
+                        <h1 class="text-center font-semibold">Kursu Satın Al</h1>
+                        <hr />
+
+                        <div class="input_text mb-3  col-lg-12">
+                            <i class="absolute left-2 top-4 text-gray-400 fa fa-user"></i>
+                            <span class="absolute left-0 text-sm -top-4">Adınız Soyadınız</span>
+                            <input type="text" class="form-control" placeholder="Adınız Soyadınız" />
+                        </div>
+
+
+                        <div class="mb-3 col-lg-12">
+                            <i class="absolute left-2 top-[14px] text-gray-400 text-sm fa fa-credit-card"></i>
+                            <span class="absolute left-0 text-sm -top-4">Kart Numarası</span>
+                            <input type="text" class="form-control" placeholder="0000 0000 0000 0000" data-slots="0" data-accept="\d" size="19" />
+                        </div>
+
+
+
+                        <div class="mb-3 col-lg-12">
+                            <i class="absolute left-2 top-4 text-gray-400 fa fa-calendar-o"></i>
+                            <span class="absolute left-0 text-sm -top-4">Son Kullanma Tarihi</span>
+                            <input type="text" class="form-control" placeholder="mm/yyyy" data-slots="my" />
+                        </div>
+
+                        <div class="mb-3 col-lg-12">
+                            <i class="absolute left-2 top-4 text-gray-400 fa fa-lock"></i>
+                            <span class="absolute left-0 text-sm -top-4">CVV</span>
+                            <input type="text" class="form-control" placeholder="000" />
+                        </div>
+
+                        <p class="text-lg text-center mt-4 text-gray-600 font-semibold">
+                            <b>
+                                Kursun Ücreti: @Model.CoursePrice ₺
+                            </b>
+                        </p>
+                        <br />
+                        <div class="text-center mb-3 ">
+                            <button class="btn btn-success form-control" style="width:450px">İşlemi Tamamla</button>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>
+
+
+            </form>
+            
+           
+
+        </div>
+    </div>
+ 
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        for (const el of document.querySelectorAll("[placeholder][data-slots]")) {
+            const pattern = el.getAttribute("placeholder"),
+                slots = new Set(el.dataset.slots || "_"),
+                prev = (j => Array.from(pattern, (c, i) => slots.has(c) ? j = i + 1 : j))(0),
+                first = [...pattern].findIndex(c => slots.has(c)),
+                accept = new RegExp(el.dataset.accept || "\\d", "g"),
+                clean = input => {
+                    input = input.match(accept) || [];
+                    return Array.from(pattern, c =>
+                        input[0] === c || slots.has(c) ? input.shift() || c : c
+                    );
+                },
+                format = () => {
+                    const [i, j] = [el.selectionStart, el.selectionEnd].map(i => {
+                        i = clean(el.value.slice(0, i)).findIndex(c => slots.has(c));
+                        return i < 0 ? prev[prev.length - 1] : back ? prev[i - 1] || first : i;
+                    }); el.value = clean(el.value).join``; el.setSelectionRange(i, j); back = false;
+                }; let back = false; el.addEventListener("keydown", (e) => back = e.key === "Backspace");
+            el.addEventListener("input", format);
+            el.addEventListener("focus", format);
+            el.addEventListener("blur", () => el.value === pattern && (el.value = ""));
+        }
+    });
+
+    var pay = document.querySelector(".pay");
+    var allinputs = document.querySelectorAll(".input_text input")
+    pay.addEventListener('click', function () {
+        allinputs.forEach((e) => {
+            e.classList.remove('warning');
+            if (e.value.length < 1) {
+                e.classList.add('warning');
+            }
+        });
+    });
+
+    allinputs.forEach((all) => {
+        all.addEventListener('keyup', function () {
+            if (all.value.length < 1) {
+                all.classList.add('warning');
+
+            }
+            else {
+                all.classList.remove('warning');
+            }
+        });
+    });
+</script>
+
+
+

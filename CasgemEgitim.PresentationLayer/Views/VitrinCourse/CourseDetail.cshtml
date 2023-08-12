@@ -8,7 +8,9 @@
 <section class="w3l-breadcrumb">
     <div class="breadcrumb-bg breadcrumb-bg-about py-5">
         <div class="container pt-lg-5 pt-3 p-lg-4 pb-3">
-            <h2 class="title mt-5 pt-lg-5 pt-sm-3">Online Kurslar</h2>
+
+            <h2 class="title mt-5 pt-lg-5 pt-sm-3">@Model.CourseName</h2>
+
             <ul class="breadcrumbs-custom-path pb-sm-5 pb-4 mt-2 text-center mb-md-5">
                 <li><a href="/VitrinCourse/Index/">Kurslar</a></li>
                 <li class="active"> / Kurs Detayı </li>
@@ -26,8 +28,8 @@
 
 <div class="container-fluild" style="margin:20px" >
 
-    <h1>@Model.CourseName</h1>
-    <hr />
+
+
     <div class="row">
 
         <div class="col-lg-6">
@@ -93,7 +95,9 @@
 
             </table>
 
-            <a class="btn btn-success form-control">Satın Al</a>
+
+            <a href="/VitrinCourse/CourseBuy/@Model.CourseId" class="btn btn-success form-control">Satın Al</a>
+
         </div>
 
     
@@ -104,7 +108,12 @@
     <br />
     <br />
 
-    @Html.PartialAsync("CourseDetailName", new { id = Model.CourseId })
+
+
+  @*  @Html.PartialAsync("CourseDetailName", new { id = Model.CourseId })
+*@
+    @await Component.InvokeAsync("_CourseDetailCourseName", new{id=Model.CourseId})
+
 
 </div>
 

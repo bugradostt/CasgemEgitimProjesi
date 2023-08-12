@@ -1,5 +1,9 @@
 ﻿using CasgemEgitim.BusinessLayer.Abstract;
 using CasgemEgitim.DataAccessLayer.Concrete;
+
+using CasgemEgitim.EntityLayer.Concrete;
+using CasgemEgitim.ModelViewLayer.ModelView.Movement;
+
 using Microsoft.AspNetCore.Mvc;
 
 namespace CasgemEgitim.PresentationLayer.Controllers
@@ -9,14 +13,31 @@ namespace CasgemEgitim.PresentationLayer.Controllers
         readonly ICourseService _courseService;
         readonly ICourseDetailService _courseDetailService;
 
-        public VitrinCourseController(ICourseService courseService)
+        readonly IMovementService _movementService;
+
+
+        public VitrinCourseController(ICourseService courseService, ICourseDetailService courseDetailService, IMovementService movementService)
         {
             _courseService = courseService;
+            _courseDetailService = courseDetailService;
+            _movementService = movementService;
         }
-        public IActionResult Index()
+
+        [HttpGet]
+        public IActionResult Index(string search = "-")
         {
-            var values = _courseService.TGetCoursesWithTeacher().OrderByDescending(x => x.CourseId).ToList();
-            return View(values);
+            if (search == "-")
+            {
+                var values = _courseService.TGetCoursesWithTeacher().OrderByDescending(x => x.CourseId).ToList();
+                return View(values);
+
+            }
+            else
+            {
+				var values = _courseService.TGetCoursesWithTeacher().Where(x=>x.CourseName.Contains(search));
+				return View(values);
+
+			}
         }
 
         public IActionResult CourseDetail(int id)
@@ -27,10 +48,28 @@ namespace CasgemEgitim.PresentationLayer.Controllers
             return View(foundId);
         }
 
-        public PartialViewResult CourseDetailName(int id)
+        [HttpGet]
+        public IActionResult CourseBuy(int id)
         {
-            var values = _courseDetailService.TGetCoursesWithById(id);
-            return PartialView(values);
+            var foundId = _courseService.TGetById(id);
+            return View(foundId);
         }
+
+        [HttpPost]
+        public IActionResult CourseBuy(CreateMovementMV p)
+        {
+            Movement model = new Movement()
+            {
+                StudentId = 1,
+                CourseId = p.CourseId
+            };
+
+            _movementService.TInsert(model);
+            return RedirectToAction("ListUserCourse", "Student");
+        }
+
+
+
+      
     }
 }

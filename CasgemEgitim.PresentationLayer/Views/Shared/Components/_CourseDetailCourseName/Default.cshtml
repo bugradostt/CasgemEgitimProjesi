@@ -1,0 +1,49 @@
+﻿@model List<CasgemEgitim.EntityLayer.Concrete.Video>
+
+
+
+
+    <div class="row">
+
+        <div class="col-lg-2"> </div>
+        <div class="col-lg-8">
+            <h3>Kurs İçeriği</h3>
+            <br />
+            <br />
+
+
+        @if (Model.Count == 0)
+        {
+            <br />
+            <div class="alert alert-danger ml-3 mr-3" role="alert">
+                Kurs içeriği bulunamadı. Lütfen eğitmenin kurs içeriğini girmesini bekleyiniz!
+            </div>
+        }
+        else
+        {
+             <table class="table table-striped">
+
+
+                @foreach (var i in Model)
+                {
+
+                    <tr>
+                        <th>@i.VideoName</th>
+                    </tr>
+
+                }
+
+            </table>
+            
+        }
+        </div>
+       
+        <div class="col-lg-2"></div>
+    </div>
+
+    
+
+
+
+
+

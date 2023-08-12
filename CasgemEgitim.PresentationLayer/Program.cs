@@ -12,6 +12,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<ICourseDal, EfCourseRepository>();
 builder.Services.AddScoped<ICourseService, CourseManager>();
 
+builder.Services.AddScoped<IMovementDal, EfMovementRepository>();
+builder.Services.AddScoped<IMovementService, MovementManager>();
+
 builder.Services.AddScoped<ICourseDetailDal, EfCourseDetailRepository>();
 builder.Services.AddScoped<ICourseDetailService,CourseDetailManager>();
 
@@ -50,7 +53,7 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=User}/{action=Login}/{id?}");
+    pattern: "{controller=VitrinHome}/{action=Index}/{id?}");
 
 
 app.UseSession();

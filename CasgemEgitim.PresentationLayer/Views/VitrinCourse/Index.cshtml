@@ -1,8 +1,10 @@
-﻿@model List<CasgemEgitim.EntityLayer.Concrete.Course>
+﻿@model IEnumerable<CasgemEgitim.EntityLayer.Concrete.Course>
 
 @{
     Layout = "~/Views/Shared/Vitrin/_VitrinLayout.cshtml";
 }
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 
 <!-- about breadcrumb -->
 <section class="w3l-breadcrumb">
@@ -20,70 +22,115 @@
             <path d="M-5.07,73.52 C149.99,150.00 299.66,-102.13 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none;"></path>
         </svg>
     </div>
+
 </section>
-<!-- //about breadcrumb -->
-<section class="w3l-courses">
-    <div class="blog pb-5" id="courses">
-        <div class="container py-lg-5 py-md-4 py-2">
-            <div class="row">
 
-                @foreach (var i in Model)
-                {
+<form method="get"> 
+    <div class="row">
 
-                    <div class="col-lg-4 col-md-6 item mb-4">
-                        <div class="card">
-                            <div class="card-header p-0 position-relative">
-                                <a href="#course-single" class="zoom d-block">
-                                    <img class="card-img-bottom d-block" style="height:200px;" src="@i.CourseImgUrl"
-                                         alt="Card image cap">
-                                </a>
-                                <div class="post-pos">
-                                    <a href="#reciepe" class="receipe blue">Beginner</a>
-                                </div>
-                            </div>
-                            <div class="card-body course-details">
-                                <div class="price-review d-flex justify-content-between mb-1align-items-center">
-                                    <p>@i.CoursePrice ₺</p>
-                                    <ul class="rating-star">
-                                        <li><span class="fa fa-star"></span></li>
-                                        <li><span class="fa fa-star"></span></li>
-                                        <li><span class="fa fa-star"></span></li>
-                                        <li><span class="fa fa-star"></span></li>
-                                        <li><span class="fa fa-star-o"></span></li>
-                                    </ul>
-                                </div>
-                                <a href="#course-single" class="course-desc">
-                                    @i.CourseName
-                                </a>
-                               
-
-                                <div class="author align-items-center mt-4">
-                                    <img src="@i.Teacher.TeacherImageUrl" alt="" class="img-fluid rounded-circle">
-                                    <ul class="blog-meta">
-
-                                        <li>
-                                            <span class="meta-value mx-1"></span>Hazırlayan, <a href="#author"></a>
-                                        </li>
-                                        <li>
-                                            <span class="meta-value mx-1"></span> <a href="#author">@i.Teacher.TeacherName</a>
-                                        </li>
-                                       
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <a href="/VitrinCourse/CourseDetail/@i.CourseId" class="btn btn-info form-control">İncele</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                }
-
-               
-           
-            </div>
-           
+        <div class="col-lg-2"></div>
+        <div class="col-lg-6">
+            <input type="text" name="search" id="search" class="form-control" placeholder="Kurs aratınız" />
         </div>
+        <div class="col-lg-4">
+            <button type="submit" class="btn btn-outline-secondary">
+                <i class="fas fa-search"></i> 
+            </button>
+
+            <a href="/VitrinCourse/Index/" class="btn btn-outline-danger">
+                İptal
+            </a>
+        </div>
+
     </div>
-</section>
+
+</form>
+
+
+
+
+@if (!Model.Any())
+{
+    <br />
+    <br />
+    <br />
+    <div class="alert alert-danger ml-3 mr-3"  role="alert">
+       Aranan kurs bulunamadı. Lütfen başka kurs aratınız !
+    </div>
+}
+else
+{
+    <!-- //about breadcrumb -->
+    <section class="w3l-courses">
+        <div class="blog pb-5" id="courses">
+            <div class="container py-lg-5 py-md-4 py-2">
+                <div class="row">
+
+                    @foreach (var i in Model)
+                    {
+
+                        <div class="col-lg-4 col-md-6 item mb-4">
+                            <div class="card">
+                                <div class="card-header p-0 position-relative">
+                                    <a href="#course-single" class="zoom d-block">
+                                        <img class="card-img-bottom d-block" style="height:200px;" src="@i.CourseImgUrl"
+                                             alt="Card image cap">
+                                    </a>
+                                    <div class="post-pos">
+                                        <a href="#reciepe" class="receipe blue">Beginner</a>
+                                    </div>
+                                </div>
+                                <div class="card-body course-details">
+                                    <div class="price-review d-flex justify-content-between mb-1align-items-center">
+                                        <p>@i.CoursePrice ₺</p>
+                                        <ul class="rating-star">
+                                            <li><span class="fa fa-star"></span></li>
+                                            <li><span class="fa fa-star"></span></li>
+                                            <li><span class="fa fa-star"></span></li>
+                                            <li><span class="fa fa-star"></span></li>
+                                            <li><span class="fa fa-star-o"></span></li>
+                                        </ul>
+                                    </div>
+                                    <a href="#course-single" class="course-desc">
+                                        @i.CourseName
+                                    </a>
+
+
+                                    <div class="author align-items-center mt-4">
+                                        <img src="@i.Teacher.TeacherImageUrl" alt="" class="img-fluid rounded-circle">
+                                        <ul class="blog-meta">
+
+                                            <li>
+                                                <span class="meta-value mx-1"></span>Hazırlayan, <a href="#author"></a>
+                                            </li>
+                                            <li>
+                                                <span class="meta-value mx-1"></span> <a href="#author">@i.Teacher.TeacherName</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="/VitrinCourse/CourseDetail/@i.CourseId" class="btn btn-info form-control">İncele</a>
+                                </div>
+
+
+                            </div>
+                           
+                        </div>
+
+
+                    }
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+}
+
+

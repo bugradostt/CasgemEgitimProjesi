@@ -56,6 +56,7 @@ namespace CasgemEgitim.DataAccessLayer.Concrete
         public DbSet<Teacher> Teachers { get; set; }
         public DbSet<Video> Videos{ get; set; }
         public DbSet<Message> Messages{ get; set; }
+        public DbSet<Comment> Comments{ get; set; }
 
 
 
