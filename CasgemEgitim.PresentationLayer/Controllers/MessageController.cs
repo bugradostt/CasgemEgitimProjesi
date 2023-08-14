@@ -21,7 +21,8 @@ namespace CasgemEgitim.PresentationLayer.Controllers
 
         public ActionResult GetInboxTeacher()
         {
-            var values = _messageService.GetMessagesByTeacherID(1);
+            var teachertId = HttpContext.Session.GetString("teachertId");
+            var values = _messageService.GetMessagesByTeacherID(Convert.ToInt32(teachertId));
             return View(values);
         }
         public ActionResult MessageDetails(int id)
@@ -35,7 +36,9 @@ namespace CasgemEgitim.PresentationLayer.Controllers
         }
 
         public ActionResult GetInboxStudent(int id) {
-            var values = _messageService.GetMessagesByStudentID(2);
+            var studentId = HttpContext.Session.GetString("studentId");
+        
+            var values = _messageService.GetMessagesByStudentID(Convert.ToInt32(studentId));
             return View(values);
         }
         public ActionResult MessageStudentDetails(int id) {

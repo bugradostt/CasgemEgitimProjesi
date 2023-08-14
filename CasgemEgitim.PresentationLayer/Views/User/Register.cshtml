@@ -1,20 +1,45 @@
 ﻿@model RegisterViewModel
 @{
-    Layout = null;
+    Layout = "~/Views/Shared/_registerLayout.cshtml";
 }
+<style>
+    select,input {
+        border: 3px solid white;
+        padding: 10px;
+        width: 300px
+    }
+   
 
+</style>
 
-<form asp-action="Register" method="post">
-	<label for="username">Kullanıcı Adı</label>
-	<input type="text" id="username" name="username" required />
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Register" method="post" class="signin-form">
+            <div>
+                <input type="text" id="name" name="name" required placeholder="Ad"/>
+            </div>
+           <br /> 
+            <div>
+            <input type="text" id="surname" name="surname" required placeholder="Soyad"/>
+            </div>
+            <br /> 
+            <div>
+            <input type="text" id="username" name="username" required placeholder="Kullanıcı Adı"/>
+            </div>
+            <br /> 
+            <div>
+                <input type="password" id="password" name="password" required  placeholder="Şifre"/>
+            </div>
+            <br /> 
+           
+            <select id="role" name="Role" required>
+                <option value="Student">Öğrenci</option>
+                <option value="Teacher">Öğretmen</option>
+            </select>
+            <br/> <br />
+            <button type="submit" style="background-color:orchid; color:white; border:3px; padding: 10px; width: 300px ">Kayıt Ol</button>
+        </form>
+    </div>
+</div>
 
-	<label for="password">Şifre</label>
-	<input type="password" id="password" name="password" required />
-
-	<label for="role">Rol</label>
-	<select id="role" name="Role" required>
-		<option value="Student">Öğrenci</option>
-		<option value="Teacher">Öğretmen</option>
-	</select>
-	<button type="submit">Kayıt Ol</button>
-</form>

@@ -32,7 +32,9 @@ namespace CasgemEgitim.PresentationLayer.Controllers
 
         public IActionResult ListUserCourse()
         {
-            var values = _courseService.TGetCoursesWithUserStudent(2);
+          
+            var studentId = HttpContext.Session.GetString("studentId");
+            var values = _courseService.TGetCoursesWithUserStudent(Convert.ToInt32(studentId));
             return View(values);
         }
 
@@ -79,6 +81,7 @@ namespace CasgemEgitim.PresentationLayer.Controllers
 
         public IActionResult ListCourseDetail(int id)
         {
+            ViewBag.Id = id;
             ViewBag.CourseName = _courseDetailService.TGetCourseByIdWithCourseName(id);
             var values = _courseDetailService.TGetCoursesWithById(id);
             return View(values);
@@ -88,10 +91,13 @@ namespace CasgemEgitim.PresentationLayer.Controllers
         [HttpPost]
         public IActionResult Comment(CreateCommentMV p)
         {
+          
+            var studentId = HttpContext.Session.GetString("studentId");
+          
             Comment model = new Comment()
             {
-               CourseId = 2,
-               StudentId=2,
+               CourseId = p.CourseId,
+               StudentId = Convert.ToInt32(studentId),
                CommentMessage = p.CommentMessage
 
             };

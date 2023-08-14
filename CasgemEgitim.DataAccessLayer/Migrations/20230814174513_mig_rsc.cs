@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace CasgemEgitim.DataAccessLayer.Migrations
 {
-    public partial class mig_yorum : Migration
+    public partial class mig_rsc : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -129,7 +129,8 @@ namespace CasgemEgitim.DataAccessLayer.Migrations
                 {
                     CommentId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    CommentMessage = table.Column<int>(type: "int", nullable: false),
+                    CommentMessage = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CommentDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     CourseId = table.Column<int>(type: "int", nullable: false),
                     StudentId = table.Column<int>(type: "int", nullable: false)
                 },

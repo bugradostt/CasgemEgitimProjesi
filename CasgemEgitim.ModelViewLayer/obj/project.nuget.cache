@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BvihnGuRrS1u/nUU1IZ8RW18ZYqaifXGWT7iyAbUZ4Wci/yLVQQLv1mEA0NeHpA9oRXz+Qvl95SIwqxf4ETFIg==",
+  "dgSpecHash": "P74M8au+sB5WF1hhYvFTkGCjg51O+Pk63thXjjaMycix5MumAIqUNS1wP8rqFy+Rx9gVI3ficMEUrPtKe6ZOIA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bugra\\Desktop\\CasgemEgitimProjesi\\CasgemEgitim.ModelViewLayer\\CasgemEgitim.ModelViewLayer.csproj",
+  "projectFilePath": "C:\\Users\\bugra\\Desktop\\Casgem_Egitim-main\\CasgemEgitimProjesi-main (2)\\CasgemEgitimProjesi-main\\CasgemEgitim.ModelViewLayer\\CasgemEgitim.ModelViewLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bugra\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\bugra\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

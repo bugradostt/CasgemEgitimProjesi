@@ -20,8 +20,11 @@ namespace CasgemEgitim.PresentationLayer.Controllers
         //Kurs
         public IActionResult ListCourse()
         {
+            var teachertId = HttpContext.Session.GetString("teachertId");
+          
+
             //var values = _courseService.TGetList().OrderByDescending(x => x.CourseId).ToList();
-            var values = _courseService.TGetCoursesWithUserTeacher(2).OrderByDescending(x => x.CourseId).ToList();
+            var values = _courseService.TGetCoursesWithUserTeacher(Convert.ToInt32(teachertId)).OrderByDescending(x => x.CourseId).ToList();
             return View(values);
         }
 
@@ -40,7 +43,8 @@ namespace CasgemEgitim.PresentationLayer.Controllers
         [HttpPost]
         public IActionResult AddCourse(Course p)
         {
-            p.TeacherId = 2;
+            var teachertId = HttpContext.Session.GetString("teachertId");
+            p.TeacherId =  Convert.ToInt32(teachertId);
             _courseService.TInsert(p);
             return RedirectToAction("ListCourse");
         }
@@ -55,7 +59,8 @@ namespace CasgemEgitim.PresentationLayer.Controllers
         [HttpPost]
         public IActionResult UpdateCourse(Course p)
         {
-            p.TeacherId = 2;
+            var teachertId = HttpContext.Session.GetString("teachertId");
+            p.TeacherId = Convert.ToInt32(teachertId);
             _courseService.TUpdate(p);
             return RedirectToAction("ListCourse");
         }

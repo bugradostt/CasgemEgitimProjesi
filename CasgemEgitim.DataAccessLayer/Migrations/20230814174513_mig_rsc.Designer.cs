@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CasgemEgitim.DataAccessLayer.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20230814081235_mig_edit")]
-    partial class mig_edit
+    [Migration("20230814174513_mig_rsc")]
+    partial class mig_rsc
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -31,6 +31,9 @@ namespace CasgemEgitim.DataAccessLayer.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CommentId"), 1L, 1);
+
+                    b.Property<DateTime>("CommentDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("CommentMessage")
                         .IsRequired()

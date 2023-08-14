@@ -10882,11 +10882,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bugra\\Desktop\\CasgemEgitimProjesi\\CasgemEgitim.PresentationLayer\\CasgemEgitim.PresentationLayer.csproj",
+      "projectUniqueName": "C:\\Users\\bugra\\Desktop\\Casgem_Egitim-main\\CasgemEgitimProjesi-main (2)\\CasgemEgitimProjesi-main\\CasgemEgitim.PresentationLayer\\CasgemEgitim.PresentationLayer.csproj",
       "projectName": "CasgemEgitim.PresentationLayer",
-      "projectPath": "C:\\Users\\bugra\\Desktop\\CasgemEgitimProjesi\\CasgemEgitim.PresentationLayer\\CasgemEgitim.PresentationLayer.csproj",
+      "projectPath": "C:\\Users\\bugra\\Desktop\\Casgem_Egitim-main\\CasgemEgitimProjesi-main (2)\\CasgemEgitimProjesi-main\\CasgemEgitim.PresentationLayer\\CasgemEgitim.PresentationLayer.csproj",
       "packagesPath": "C:\\Users\\bugra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bugra\\Desktop\\CasgemEgitimProjesi\\CasgemEgitim.PresentationLayer\\obj\\",
+      "outputPath": "C:\\Users\\bugra\\Desktop\\Casgem_Egitim-main\\CasgemEgitimProjesi-main (2)\\CasgemEgitimProjesi-main\\CasgemEgitim.PresentationLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\bugra\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -10904,14 +10904,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\bugra\\Desktop\\CasgemEgitimProjesi\\CasgemEgitim.BusinessLayer\\CasgemEgitim.BusinessLayer.csproj": {
-              "projectPath": "C:\\Users\\bugra\\Desktop\\CasgemEgitimProjesi\\CasgemEgitim.BusinessLayer\\CasgemEgitim.BusinessLayer.csproj"
+            "C:\\Users\\bugra\\Desktop\\Casgem_Egitim-main\\CasgemEgitimProjesi-main (2)\\CasgemEgitimProjesi-main\\CasgemEgitim.BusinessLayer\\CasgemEgitim.BusinessLayer.csproj": {
+              "projectPath": "C:\\Users\\bugra\\Desktop\\Casgem_Egitim-main\\CasgemEgitimProjesi-main (2)\\CasgemEgitimProjesi-main\\CasgemEgitim.BusinessLayer\\CasgemEgitim.BusinessLayer.csproj"
             },
-            "C:\\Users\\bugra\\Desktop\\CasgemEgitimProjesi\\CasgemEgitim.DataAccessLayer\\CasgemEgitim.DataAccessLayer.csproj": {
-              "projectPath": "C:\\Users\\bugra\\Desktop\\CasgemEgitimProjesi\\CasgemEgitim.DataAccessLayer\\CasgemEgitim.DataAccessLayer.csproj"
+            "C:\\Users\\bugra\\Desktop\\Casgem_Egitim-main\\CasgemEgitimProjesi-main (2)\\CasgemEgitimProjesi-main\\CasgemEgitim.DataAccessLayer\\CasgemEgitim.DataAccessLayer.csproj": {
+              "projectPath": "C:\\Users\\bugra\\Desktop\\Casgem_Egitim-main\\CasgemEgitimProjesi-main (2)\\CasgemEgitimProjesi-main\\CasgemEgitim.DataAccessLayer\\CasgemEgitim.DataAccessLayer.csproj"
             },
-            "C:\\Users\\bugra\\Desktop\\CasgemEgitimProjesi\\CasgemEgitim.ModelViewLayer\\CasgemEgitim.ModelViewLayer.csproj": {
-              "projectPath": "C:\\Users\\bugra\\Desktop\\CasgemEgitimProjesi\\CasgemEgitim.ModelViewLayer\\CasgemEgitim.ModelViewLayer.csproj"
+            "C:\\Users\\bugra\\Desktop\\Casgem_Egitim-main\\CasgemEgitimProjesi-main (2)\\CasgemEgitimProjesi-main\\CasgemEgitim.ModelViewLayer\\CasgemEgitim.ModelViewLayer.csproj": {
+              "projectPath": "C:\\Users\\bugra\\Desktop\\Casgem_Egitim-main\\CasgemEgitimProjesi-main (2)\\CasgemEgitimProjesi-main\\CasgemEgitim.ModelViewLayer\\CasgemEgitim.ModelViewLayer.csproj"
             }
           }
         }

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CasgemEgitim.DataAccessLayer.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20230814090353_mig_12")]
-    partial class mig_12
+    [Migration("20230814175900_mig_rs")]
+    partial class mig_rs
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -31,6 +31,9 @@ namespace CasgemEgitim.DataAccessLayer.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CommentId"), 1L, 1);
+
+                    b.Property<DateTime>("CommentDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("CommentMessage")
                         .IsRequired()
@@ -185,7 +188,6 @@ namespace CasgemEgitim.DataAccessLayer.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Mail")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Password")
@@ -197,9 +199,11 @@ namespace CasgemEgitim.DataAccessLayer.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("StudentName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("StudentSurname")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Username")
@@ -224,7 +228,6 @@ namespace CasgemEgitim.DataAccessLayer.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TeacherImageUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TeacherName")

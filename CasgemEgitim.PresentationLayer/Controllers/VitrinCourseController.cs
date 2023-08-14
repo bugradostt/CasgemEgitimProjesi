@@ -51,7 +51,10 @@ namespace CasgemEgitim.PresentationLayer.Controllers
         [HttpGet]
         public IActionResult CourseBuy(int id)
         {
-            ViewBag.BuyIsTrue = _movementService.TGetCoursesByIdWithStudentId(id, 1);
+         
+            var studentId = HttpContext.Session.GetString("studentId");
+           
+            ViewBag.BuyIsTrue = _movementService.TGetCoursesByIdWithStudentId(id,Convert.ToInt32(studentId));
 			var foundId = _courseService.TGetById(id);
             return View(foundId);
         }
@@ -59,9 +62,10 @@ namespace CasgemEgitim.PresentationLayer.Controllers
         [HttpPost]
         public IActionResult CourseBuy(CreateMovementMV p)
         {
+            var studentId = HttpContext.Session.GetString("studentId");
             Movement model = new Movement()
             {
-                StudentId = 2,
+                StudentId = Convert.ToInt32(studentId),
                 CourseId = p.CourseId
             };
 

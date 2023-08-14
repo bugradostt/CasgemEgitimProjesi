@@ -15,7 +15,7 @@ namespace CasgemEgitim.EntityLayer.Concrete
         public string TeacherSurname { get; set; }
         public string TeacherUsername { get; set; }
         public string TeacherPassword { get; set; }
-        public string TeacherImageUrl { get; set; }
+        public string? TeacherImageUrl { get; set; }
         public ICollection<Message> SentMessages { get; set; }
         public ICollection<Message> ReceivedMessages { get; set; }
         public string Role { get; set; }

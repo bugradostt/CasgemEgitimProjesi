@@ -30,6 +30,7 @@ namespace CasgemEgitim.PresentationLayer.Controllers
             if (student != null && student.Password == vm.Password)
             {
                 HttpContext.Session.SetString("username", student.Username);
+                HttpContext.Session.SetString("studentId", student.StudentId.ToString());
                 ViewBag.s = student.StudentName;
                 return Redirect($"{student.Role}/Index");
             }
@@ -38,6 +39,8 @@ namespace CasgemEgitim.PresentationLayer.Controllers
             {
                 ViewBag.t = teacher.TeacherName;
                 HttpContext.Session.SetString("username", teacher.TeacherUsername);
+                HttpContext.Session.SetString("teachertId", teacher.TeachertId.ToString());
+
                 return Redirect($"{teacher.Role}/Index");
 
             }
@@ -60,9 +63,11 @@ namespace CasgemEgitim.PresentationLayer.Controllers
             {
                 Student student = new Student
                 {
-                    StudentName = vm.Username,
+                    StudentName = vm.Name,
+                    StudentSurname= vm.Surname,
                     Username = vm.Username,
                     Password = vm.Password,
+                    ImageUrl="test",
                     Role = "Student"
                 };
 
@@ -72,16 +77,23 @@ namespace CasgemEgitim.PresentationLayer.Controllers
             {
                 Teacher teacher = new Teacher
                 {
-                    TeacherName = vm.Username,
+                    TeacherName = vm.Name,
+                    TeacherSurname=vm.Surname,
                     TeacherUsername = vm.Username,
                     TeacherPassword = vm.Password,
+                    TeacherImageUrl= "test",
                     Role = "Teacher"
                 };
 
                 await teacherService.AddTeacher(teacher);
             }
 
-            return RedirectToAction("Register", "User");
+            return RedirectToAction("Login", "User");
+        }
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Clear();
+            return RedirectToAction("Login");
         }
 
     }
