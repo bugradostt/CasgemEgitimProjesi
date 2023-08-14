@@ -1,0 +1,47 @@
+﻿@model List<CasgemEgitim.EntityLayer.Concrete.Comment>
+
+
+
+
+<div class="row">
+    <br />
+    <br />
+    <br />
+    <div class="col-lg-2"> </div>
+    <div class="col-lg-8">
+        <h3>Yorumlar</h3>
+        <br />
+
+
+
+        @if (Model.Count == 0)
+        {
+            <br />
+            <div class="alert alert-danger ml-3 mr-3" role="alert">
+                Bu kursa henüz yorum yapılmadı
+            </div>
+        }
+        else
+        {
+            <table class="table table-striped">
+
+
+                @foreach (var i in Model)
+                {
+
+                    <tr>
+                        <th>@i.CommentMessage</th>
+                    </tr>
+
+                }
+
+            </table>
+
+        }
+    </div>
+
+    <div class="col-lg-2"></div>
+</div>
+
+
+

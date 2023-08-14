@@ -9,5 +9,6 @@ namespace CasgemEgitim.DataAccessLayer.Abstract
 {
     public interface ICommentDal : IGenericDal<Comment>
     {
+        public List<Comment> GetCommentCoursesWithUserStudent(int id);
     }
 }

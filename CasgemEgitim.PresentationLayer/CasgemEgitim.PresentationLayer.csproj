@@ -34,11 +34,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ViewComponents\" />
-    <Folder Include="Views\Shared\Components\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="wwwroot\Templates\Student\.github\workflows\handle-new-issue-comment.yml" />
     <None Include="wwwroot\Templates\Student\.github\workflows\handle-new-issue.yml" />
     <None Include="wwwroot\Templates\Student\.github\workflows\issue-staler.yml" />

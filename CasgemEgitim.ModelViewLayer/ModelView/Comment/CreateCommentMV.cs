@@ -13,6 +13,8 @@ namespace CasgemEgitim.ModelViewLayer.ModelView.Comment
         public int CourseId { get; set; }
         public string CommentMessage { get; set; }
         public int StudentId { get; set; }
-        
+
+        public DateTime CommentDate => Convert.ToDateTime(DateTime.Now.ToShortDateString());
+
     }
 }

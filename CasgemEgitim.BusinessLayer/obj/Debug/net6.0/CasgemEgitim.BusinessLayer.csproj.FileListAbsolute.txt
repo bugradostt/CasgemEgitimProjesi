@@ -15,3 +15,20 @@ C:\Users\bugra\Desktop\Casgem_Egitim-main\CasgemEgitimProjesi-main (1)\CasgemEgi
 C:\Users\bugra\Desktop\Casgem_Egitim-main\CasgemEgitimProjesi-main (1)\CasgemEgitimProjesi-main\CasgemEgitim.BusinessLayer\obj\Debug\net6.0\refint\CasgemEgitim.BusinessLayer.dll
 C:\Users\bugra\Desktop\Casgem_Egitim-main\CasgemEgitimProjesi-main (1)\CasgemEgitimProjesi-main\CasgemEgitim.BusinessLayer\obj\Debug\net6.0\CasgemEgitim.BusinessLayer.pdb
 C:\Users\bugra\Desktop\Casgem_Egitim-main\CasgemEgitimProjesi-main (1)\CasgemEgitimProjesi-main\CasgemEgitim.BusinessLayer\obj\Debug\net6.0\ref\CasgemEgitim.BusinessLayer.dll
+C:\Users\bugra\Desktop\CasgemEgitimProjesi\CasgemEgitim.BusinessLayer\bin\Debug\net6.0\CasgemEgitim.BusinessLayer.deps.json
+C:\Users\bugra\Desktop\CasgemEgitimProjesi\CasgemEgitim.BusinessLayer\bin\Debug\net6.0\CasgemEgitim.BusinessLayer.dll
+C:\Users\bugra\Desktop\CasgemEgitimProjesi\CasgemEgitim.BusinessLayer\bin\Debug\net6.0\CasgemEgitim.BusinessLayer.pdb
+C:\Users\bugra\Desktop\CasgemEgitimProjesi\CasgemEgitim.BusinessLayer\bin\Debug\net6.0\CasgemEgitim.DataAccessLayer.dll
+C:\Users\bugra\Desktop\CasgemEgitimProjesi\CasgemEgitim.BusinessLayer\bin\Debug\net6.0\CasgemEgitim.EntityLayer.dll
+C:\Users\bugra\Desktop\CasgemEgitimProjesi\CasgemEgitim.BusinessLayer\bin\Debug\net6.0\CasgemEgitim.DataAccessLayer.pdb
+C:\Users\bugra\Desktop\CasgemEgitimProjesi\CasgemEgitim.BusinessLayer\bin\Debug\net6.0\CasgemEgitim.EntityLayer.pdb
+C:\Users\bugra\Desktop\CasgemEgitimProjesi\CasgemEgitim.BusinessLayer\obj\Debug\net6.0\CasgemEgitim.BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\bugra\Desktop\CasgemEgitimProjesi\CasgemEgitim.BusinessLayer\obj\Debug\net6.0\CasgemEgitim.BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bugra\Desktop\CasgemEgitimProjesi\CasgemEgitim.BusinessLayer\obj\Debug\net6.0\CasgemEgitim.BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\bugra\Desktop\CasgemEgitimProjesi\CasgemEgitim.BusinessLayer\obj\Debug\net6.0\CasgemEgitim.BusinessLayer.AssemblyInfo.cs
+C:\Users\bugra\Desktop\CasgemEgitimProjesi\CasgemEgitim.BusinessLayer\obj\Debug\net6.0\CasgemEgitim.BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\bugra\Desktop\CasgemEgitimProjesi\CasgemEgitim.BusinessLayer\obj\Debug\net6.0\CasgemEgitim.BusinessLayer.csproj.CopyComplete
+C:\Users\bugra\Desktop\CasgemEgitimProjesi\CasgemEgitim.BusinessLayer\obj\Debug\net6.0\CasgemEgitim.BusinessLayer.dll
+C:\Users\bugra\Desktop\CasgemEgitimProjesi\CasgemEgitim.BusinessLayer\obj\Debug\net6.0\refint\CasgemEgitim.BusinessLayer.dll
+C:\Users\bugra\Desktop\CasgemEgitimProjesi\CasgemEgitim.BusinessLayer\obj\Debug\net6.0\CasgemEgitim.BusinessLayer.pdb
+C:\Users\bugra\Desktop\CasgemEgitimProjesi\CasgemEgitim.BusinessLayer\obj\Debug\net6.0\ref\CasgemEgitim.BusinessLayer.dll

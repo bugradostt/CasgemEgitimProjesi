@@ -9,5 +9,6 @@ namespace CasgemEgitim.BusinessLayer.Abstract
 {
     public interface ICommentService : IGenericService<Comment>
     {
+        public List<Comment> TGetCommentCoursesWithUserStudent(int id);
     }
 }

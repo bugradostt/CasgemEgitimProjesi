@@ -12,11 +12,12 @@ namespace CasgemEgitim.PresentationLayer.Controllers
         private readonly ICourseDetailService _courseDetailService;
         private readonly ICommentService _commentService;
 
-        public StudentController(IStudentService studentService, ICourseService courseService = null, ICourseDetailService courseDetailService = null)
+        public StudentController(IStudentService studentService, ICourseService courseService, ICourseDetailService courseDetailService, ICommentService commentService)
         {
             _studentService = studentService;
             _courseService = courseService;
             _courseDetailService = courseDetailService;
+            _commentService = commentService;
         }
 
         public IActionResult Index()
@@ -85,19 +86,16 @@ namespace CasgemEgitim.PresentationLayer.Controllers
 
 
         [HttpPost]
-        public IActionResult Comment(Comment p)
+        public IActionResult Comment(CreateCommentMV p)
         {
             Comment model = new Comment()
             {
-               CourseId = 1,
+               CourseId = 2,
                StudentId=2,
                CommentMessage = p.CommentMessage
 
             };
-            p.CommentId = 1;
-            p.StudentId=2;
-            p.CommentMessage = p.CommentMessage;
-            _commentService.TInsert(p);
+            _commentService.TInsert(model);
             return RedirectToAction("ListUserCourse");
         }
     }

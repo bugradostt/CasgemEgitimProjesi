@@ -12,3 +12,17 @@ C:\Users\bugra\Desktop\Casgem_Egitim-main\CasgemEgitimProjesi-main (1)\CasgemEgi
 C:\Users\bugra\Desktop\Casgem_Egitim-main\CasgemEgitimProjesi-main (1)\CasgemEgitimProjesi-main\CasgemEgitim.EntityLayer\obj\Debug\net6.0\CasgemEgitim.EntityLayer.pdb
 C:\Users\bugra\Desktop\Casgem_Egitim-main\CasgemEgitimProjesi-main (1)\CasgemEgitimProjesi-main\CasgemEgitim.EntityLayer\obj\Debug\net6.0\CasgemEgitim.EntityLayer.genruntimeconfig.cache
 C:\Users\bugra\Desktop\Casgem_Egitim-main\CasgemEgitimProjesi-main (1)\CasgemEgitimProjesi-main\CasgemEgitim.EntityLayer\obj\Debug\net6.0\ref\CasgemEgitim.EntityLayer.dll
+C:\Users\bugra\Desktop\CasgemEgitimProjesi\CasgemEgitim.EntityLayer\bin\Debug\net6.0\CasgemEgitim.EntityLayer.deps.json
+C:\Users\bugra\Desktop\CasgemEgitimProjesi\CasgemEgitim.EntityLayer\bin\Debug\net6.0\CasgemEgitim.EntityLayer.runtimeconfig.json
+C:\Users\bugra\Desktop\CasgemEgitimProjesi\CasgemEgitim.EntityLayer\bin\Debug\net6.0\CasgemEgitim.EntityLayer.dll
+C:\Users\bugra\Desktop\CasgemEgitimProjesi\CasgemEgitim.EntityLayer\bin\Debug\net6.0\CasgemEgitim.EntityLayer.pdb
+C:\Users\bugra\Desktop\CasgemEgitimProjesi\CasgemEgitim.EntityLayer\obj\Debug\net6.0\CasgemEgitim.EntityLayer.csproj.AssemblyReference.cache
+C:\Users\bugra\Desktop\CasgemEgitimProjesi\CasgemEgitim.EntityLayer\obj\Debug\net6.0\CasgemEgitim.EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bugra\Desktop\CasgemEgitimProjesi\CasgemEgitim.EntityLayer\obj\Debug\net6.0\CasgemEgitim.EntityLayer.AssemblyInfoInputs.cache
+C:\Users\bugra\Desktop\CasgemEgitimProjesi\CasgemEgitim.EntityLayer\obj\Debug\net6.0\CasgemEgitim.EntityLayer.AssemblyInfo.cs
+C:\Users\bugra\Desktop\CasgemEgitimProjesi\CasgemEgitim.EntityLayer\obj\Debug\net6.0\CasgemEgitim.EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\bugra\Desktop\CasgemEgitimProjesi\CasgemEgitim.EntityLayer\obj\Debug\net6.0\CasgemEgitim.EntityLayer.dll
+C:\Users\bugra\Desktop\CasgemEgitimProjesi\CasgemEgitim.EntityLayer\obj\Debug\net6.0\refint\CasgemEgitim.EntityLayer.dll
+C:\Users\bugra\Desktop\CasgemEgitimProjesi\CasgemEgitim.EntityLayer\obj\Debug\net6.0\CasgemEgitim.EntityLayer.pdb
+C:\Users\bugra\Desktop\CasgemEgitimProjesi\CasgemEgitim.EntityLayer\obj\Debug\net6.0\CasgemEgitim.EntityLayer.genruntimeconfig.cache
+C:\Users\bugra\Desktop\CasgemEgitimProjesi\CasgemEgitim.EntityLayer\obj\Debug\net6.0\ref\CasgemEgitim.EntityLayer.dll

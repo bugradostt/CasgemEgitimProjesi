@@ -30,6 +30,9 @@ namespace CasgemEgitim.DataAccessLayer.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CommentId"), 1L, 1);
 
+                    b.Property<DateTime>("CommentDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("CommentMessage")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

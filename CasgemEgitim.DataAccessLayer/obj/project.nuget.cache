@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xsJyadp129khEebpUMaYE4wVTsz5Va4J5LMxQ/O5TtoHVHo5HfFBmP9g4Vza3KzInl73aIzOVT90TdLSQNqhVA==",
+  "dgSpecHash": "KtY8DZrG7VgyKGTrYtUpWznD4pXe2GGJ/vCP6G99lgtoqhjFjE0xmeRfvcgox6GVv53VjVudPAsJOk32Zuk0ZQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bugra\\Desktop\\Casgem_Egitim-main\\CasgemEgitimProjesi-main (1)\\CasgemEgitimProjesi-main\\CasgemEgitim.DataAccessLayer\\CasgemEgitim.DataAccessLayer.csproj",
+  "projectFilePath": "C:\\Users\\bugra\\Desktop\\CasgemEgitimProjesi\\CasgemEgitim.DataAccessLayer\\CasgemEgitim.DataAccessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bugra\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\bugra\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

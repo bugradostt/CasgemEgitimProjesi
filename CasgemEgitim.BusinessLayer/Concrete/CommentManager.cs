@@ -28,6 +28,11 @@ namespace CasgemEgitim.BusinessLayer.Concrete
             throw new NotImplementedException();
         }
 
+        public List<Comment> TGetCommentCoursesWithUserStudent(int id)
+        {
+            return _commentDal.GetCommentCoursesWithUserStudent(id);
+        }
+
         public List<Comment> TGetList()
         {
             return _commentDal.GetList();

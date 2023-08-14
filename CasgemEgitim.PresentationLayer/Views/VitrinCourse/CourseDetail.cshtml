@@ -110,9 +110,8 @@
 
 
 
-  @*  @Html.PartialAsync("CourseDetailName", new { id = Model.CourseId })
-*@
     @await Component.InvokeAsync("_CourseDetailCourseName", new{id=Model.CourseId})
+    @await Component.InvokeAsync("_CommentWithCourse", new{id=Model.CourseId})
 
 
 </div>
