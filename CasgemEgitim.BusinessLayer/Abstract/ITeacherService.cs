@@ -10,5 +10,6 @@ namespace CasgemEgitim.BusinessLayer.Abstract
     public interface ITeacherService: IGenericService<Teacher>
     {
         Task<Teacher> TGetTeacherByUsername(string username);
+        Task<Teacher> AddTeacher(Teacher teacher);
     }
 }

@@ -12,6 +12,38 @@
     <br />
     <a class="btn btn-outline-danger" href="/Student/ListUserCourse/"> Geri</a>
 
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Yorum Yap
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form method="post" action="/Student/Comment">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Kursa Yorum Yap</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <textarea name="CommentMessage" placeholder="Bu kursa yorumunuz" class="form-control" rows="5"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">İptal</button>
+                        <button type="submit" class="btn btn-primary">Yorum Yap</button>
+                    </div>
+
+                </form>
+              
+            </div>
+        </div>
+    </div>
+
+
+
+  
+
     <hr />
 
 

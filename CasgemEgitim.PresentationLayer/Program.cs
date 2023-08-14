@@ -28,6 +28,10 @@ builder.Services.AddScoped<IMessageDal, EFMessageRepository>();
 builder.Services.AddScoped<IMessageService, MessageManager>();
 
 
+builder.Services.AddScoped<ICommentDal, EfCommentRepository>();
+builder.Services.AddScoped<ICommentService, CommentManager>();
+
+
 
 builder.Services.AddDbContext<Context>();
 builder.Services.AddControllersWithViews();

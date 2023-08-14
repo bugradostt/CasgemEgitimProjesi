@@ -1,0 +1,20 @@
+﻿@model RegisterViewModel
+@{
+    Layout = null;
+}
+
+
+<form asp-action="Register" method="post">
+	<label for="username">Kullanıcı Adı</label>
+	<input type="text" id="username" name="username" required />
+
+	<label for="password">Şifre</label>
+	<input type="password" id="password" name="password" required />
+
+	<label for="role">Rol</label>
+	<select id="role" name="Role" required>
+		<option value="Student">Öğrenci</option>
+		<option value="Teacher">Öğretmen</option>
+	</select>
+	<button type="submit">Kayıt Ol</button>
+</form>

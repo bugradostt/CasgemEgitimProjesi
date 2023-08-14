@@ -1934,11 +1934,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bugra\\Desktop\\CasgemEgitimProjesi\\CasgemEgitim.ModelViewLayer\\CasgemEgitim.ModelViewLayer.csproj",
+      "projectUniqueName": "C:\\Users\\bugra\\Desktop\\Casgem_Egitim-main\\CasgemEgitimProjesi-main (1)\\CasgemEgitimProjesi-main\\CasgemEgitim.ModelViewLayer\\CasgemEgitim.ModelViewLayer.csproj",
       "projectName": "CasgemEgitim.ModelViewLayer",
-      "projectPath": "C:\\Users\\bugra\\Desktop\\CasgemEgitimProjesi\\CasgemEgitim.ModelViewLayer\\CasgemEgitim.ModelViewLayer.csproj",
+      "projectPath": "C:\\Users\\bugra\\Desktop\\Casgem_Egitim-main\\CasgemEgitimProjesi-main (1)\\CasgemEgitimProjesi-main\\CasgemEgitim.ModelViewLayer\\CasgemEgitim.ModelViewLayer.csproj",
       "packagesPath": "C:\\Users\\bugra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bugra\\Desktop\\CasgemEgitimProjesi\\CasgemEgitim.ModelViewLayer\\obj\\",
+      "outputPath": "C:\\Users\\bugra\\Desktop\\Casgem_Egitim-main\\CasgemEgitimProjesi-main (1)\\CasgemEgitimProjesi-main\\CasgemEgitim.ModelViewLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\bugra\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1955,8 +1955,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\bugra\\Desktop\\CasgemEgitimProjesi\\CasgemEgitim.EntityLayer\\CasgemEgitim.EntityLayer.csproj": {
-              "projectPath": "C:\\Users\\bugra\\Desktop\\CasgemEgitimProjesi\\CasgemEgitim.EntityLayer\\CasgemEgitim.EntityLayer.csproj"
+            "C:\\Users\\bugra\\Desktop\\Casgem_Egitim-main\\CasgemEgitimProjesi-main (1)\\CasgemEgitimProjesi-main\\CasgemEgitim.EntityLayer\\CasgemEgitim.EntityLayer.csproj": {
+              "projectPath": "C:\\Users\\bugra\\Desktop\\Casgem_Egitim-main\\CasgemEgitimProjesi-main (1)\\CasgemEgitimProjesi-main\\CasgemEgitim.EntityLayer\\CasgemEgitim.EntityLayer.csproj"
             }
           }
         }

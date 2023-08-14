@@ -28,7 +28,12 @@ namespace CasgemEgitim.BusinessLayer.Concrete
             throw new NotImplementedException();
         }
 
-        public List<Movement> TGetList()
+		public bool TGetCoursesByIdWithStudentId(int courseId, int studentId)
+		{
+			return _movementDal.GetCoursesByIdWithStudentId(courseId, studentId);
+		}
+
+		public List<Movement> TGetList()
         {
             throw new NotImplementedException();
         }

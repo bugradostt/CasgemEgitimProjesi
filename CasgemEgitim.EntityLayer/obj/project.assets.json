@@ -2019,11 +2019,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bugra\\Desktop\\CasgemEgitimProjesi\\CasgemEgitim.EntityLayer\\CasgemEgitim.EntityLayer.csproj",
+      "projectUniqueName": "C:\\Users\\bugra\\Desktop\\Casgem_Egitim-main\\CasgemEgitimProjesi-main (1)\\CasgemEgitimProjesi-main\\CasgemEgitim.EntityLayer\\CasgemEgitim.EntityLayer.csproj",
       "projectName": "CasgemEgitim.EntityLayer",
-      "projectPath": "C:\\Users\\bugra\\Desktop\\CasgemEgitimProjesi\\CasgemEgitim.EntityLayer\\CasgemEgitim.EntityLayer.csproj",
+      "projectPath": "C:\\Users\\bugra\\Desktop\\Casgem_Egitim-main\\CasgemEgitimProjesi-main (1)\\CasgemEgitimProjesi-main\\CasgemEgitim.EntityLayer\\CasgemEgitim.EntityLayer.csproj",
       "packagesPath": "C:\\Users\\bugra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bugra\\Desktop\\CasgemEgitimProjesi\\CasgemEgitim.EntityLayer\\obj\\",
+      "outputPath": "C:\\Users\\bugra\\Desktop\\Casgem_Egitim-main\\CasgemEgitimProjesi-main (1)\\CasgemEgitimProjesi-main\\CasgemEgitim.EntityLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\bugra\\AppData\\Roaming\\NuGet\\NuGet.Config",

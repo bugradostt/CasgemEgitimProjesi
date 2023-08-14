@@ -51,7 +51,8 @@ namespace CasgemEgitim.PresentationLayer.Controllers
         [HttpGet]
         public IActionResult CourseBuy(int id)
         {
-            var foundId = _courseService.TGetById(id);
+            ViewBag.BuyIsTrue = _movementService.TGetCoursesByIdWithStudentId(id, 1);
+			var foundId = _courseService.TGetById(id);
             return View(foundId);
         }
 
@@ -60,7 +61,7 @@ namespace CasgemEgitim.PresentationLayer.Controllers
         {
             Movement model = new Movement()
             {
-                StudentId = 1,
+                StudentId = 2,
                 CourseId = p.CourseId
             };
 

@@ -11,5 +11,6 @@ namespace CasgemEgitim.DataAccessLayer.Abstract
     public interface ITeacherDal:IGenericDal<Teacher>
     {
         Task<Teacher> GetTeacherByUsername(string username);
+        Task<Teacher> AddTeacher(Teacher teacher);
     }
 }

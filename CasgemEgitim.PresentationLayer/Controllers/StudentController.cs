@@ -1,5 +1,6 @@
 ﻿using CasgemEgitim.BusinessLayer.Abstract;
 using CasgemEgitim.EntityLayer.Concrete;
+using CasgemEgitim.ModelViewLayer.ModelView.Comment;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CasgemEgitim.PresentationLayer.Controllers
@@ -9,6 +10,7 @@ namespace CasgemEgitim.PresentationLayer.Controllers
         private readonly IStudentService _studentService;
         private readonly ICourseService _courseService;
         private readonly ICourseDetailService _courseDetailService;
+        private readonly ICommentService _commentService;
 
         public StudentController(IStudentService studentService, ICourseService courseService = null, ICourseDetailService courseDetailService = null)
         {
@@ -29,7 +31,7 @@ namespace CasgemEgitim.PresentationLayer.Controllers
 
         public IActionResult ListUserCourse()
         {
-            var values = _courseService.TGetCoursesWithUserStudent(1);
+            var values = _courseService.TGetCoursesWithUserStudent(2);
             return View(values);
         }
 
@@ -79,6 +81,24 @@ namespace CasgemEgitim.PresentationLayer.Controllers
             ViewBag.CourseName = _courseDetailService.TGetCourseByIdWithCourseName(id);
             var values = _courseDetailService.TGetCoursesWithById(id);
             return View(values);
+        }
+
+
+        [HttpPost]
+        public IActionResult Comment(Comment p)
+        {
+            Comment model = new Comment()
+            {
+               CourseId = 1,
+               StudentId=2,
+               CommentMessage = p.CommentMessage
+
+            };
+            p.CommentId = 1;
+            p.StudentId=2;
+            p.CommentMessage = p.CommentMessage;
+            _commentService.TInsert(p);
+            return RedirectToAction("ListUserCourse");
         }
     }
 }

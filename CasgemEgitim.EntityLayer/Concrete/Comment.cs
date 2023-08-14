@@ -10,7 +10,7 @@ namespace CasgemEgitim.EntityLayer.Concrete
     {
         public int CommentId { get; set; }
        // public int CommentUserName { get; set; }
-        public int CommentMessage { get; set; }
+        public string CommentMessage { get; set; }
         public int CourseId { get; set; }
         public Course Course { get; set; }
 

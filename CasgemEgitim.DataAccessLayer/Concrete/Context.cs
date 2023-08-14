@@ -17,7 +17,7 @@ namespace CasgemEgitim.DataAccessLayer.Concrete
 
 
             //Nurgül
-            //optionsBuilder.UseSqlServer("Data Source=LAPTOP-DMD5S6B7; initial catalog=CasgemEgitimProjesiDb; integrated security=true");
+           // optionsBuilder.UseSqlServer("Data Source=LAPTOP-DMD5S6B7; initial catalog=CasgemEgitimProjesiDb; integrated security=true");
 
 
             //Selvi

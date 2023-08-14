@@ -9,5 +9,6 @@ namespace CasgemEgitim.DataAccessLayer.Abstract
 {
     public interface IMovementDal : IGenericDal<Movement>
     {
-    }
+		public bool GetCoursesByIdWithStudentId(int courseId, int studentId);
+	}
 }

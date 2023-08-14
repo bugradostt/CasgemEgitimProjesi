@@ -55,7 +55,7 @@ namespace CasgemEgitim.PresentationLayer.Controllers
         [HttpPost]
         public IActionResult UpdateCourse(Course p)
         {
-            p.TeacherId = 1;
+            p.TeacherId = 2;
             _courseService.TUpdate(p);
             return RedirectToAction("ListCourse");
         }

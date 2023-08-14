@@ -1,4 +1,5 @@
 ﻿using CasgemEgitim.BusinessLayer.Abstract;
+using CasgemEgitim.EntityLayer.Concrete;
 using CasgemEgitim.PresentationLayer.Models.UserVMs;
 using Microsoft.AspNetCore.Mvc;
 
@@ -41,6 +42,46 @@ namespace CasgemEgitim.PresentationLayer.Controllers
 
             }
             return View();
+        }
+
+
+
+        [HttpGet]
+        public async Task<IActionResult> Register()
+        {
+            return View();
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> Register(RegisterViewModel vm)
+        {
+            if (vm.Role == "Student")
+            {
+                Student student = new Student
+                {
+                    StudentName = vm.Username,
+                    Username = vm.Username,
+                    Password = vm.Password,
+                    Role = "Student"
+                };
+
+                await studentService.AddStudent(student);
+            }
+            else if (vm.Role == "Teacher")
+            {
+                Teacher teacher = new Teacher
+                {
+                    TeacherName = vm.Username,
+                    TeacherUsername = vm.Username,
+                    TeacherPassword = vm.Password,
+                    Role = "Teacher"
+                };
+
+                await teacherService.AddTeacher(teacher);
+            }
+
+            return RedirectToAction("Register", "User");
         }
 
     }

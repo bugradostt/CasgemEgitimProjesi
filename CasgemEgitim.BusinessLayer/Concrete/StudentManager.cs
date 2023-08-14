@@ -47,5 +47,9 @@ namespace CasgemEgitim.BusinessLayer.Concrete
         {
             _studentDal.Update(t);
         }
+        public async Task<Student> AddStudent(Student student)
+        {
+            return await _studentDal.AddStudent(student);
+        }
     }
 }

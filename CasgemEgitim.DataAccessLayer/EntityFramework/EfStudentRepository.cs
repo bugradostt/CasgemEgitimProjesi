@@ -25,5 +25,11 @@ namespace CasgemEgitim.DataAccessLayer.EntityFramework
             var s = await context.Students.FirstOrDefaultAsync(x => x.Username == username);
             return s;
         }
+        public async Task<Student> AddStudent(Student student)
+        {
+            context.Students.Add(student);
+            await context.SaveChangesAsync();
+            return student;
+        }
     }
 }

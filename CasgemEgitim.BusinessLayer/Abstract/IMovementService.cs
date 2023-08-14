@@ -9,5 +9,6 @@ namespace CasgemEgitim.BusinessLayer.Abstract
 {
     public interface IMovementService : IGenericService<Movement>
     {
-    }
+		public bool TGetCoursesByIdWithStudentId(int courseId, int studentId);
+	}
 }
