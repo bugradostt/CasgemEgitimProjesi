@@ -9,165 +9,173 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CasgemEgitim.PresentationLayer
 build_property.RootNamespace = CasgemEgitim.PresentationLayer
-build_property.ProjectDir = C:\Users\bugra\Desktop\Casgem_Egitim-main\CasgemEgitimProjesi-main (2)\CasgemEgitimProjesi-main\CasgemEgitim.PresentationLayer\
+build_property.ProjectDir = C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\CasgemEgitimProjesi\CasgemEgitim.PresentationLayer\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\bugra\Desktop\Casgem_Egitim-main\CasgemEgitimProjesi-main (2)\CasgemEgitimProjesi-main\CasgemEgitim.PresentationLayer
+build_property.MSBuildProjectDirectory = C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\CasgemEgitimProjesi\CasgemEgitim.PresentationLayer
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/Message/GetInboxStudent.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/Message/GetInboxStudent.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVxHZXRJbmJveFN0dWRlbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/Message/GetInboxTeacher.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/Message/GetInboxTeacher.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVxHZXRJbmJveFRlYWNoZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/Message/MessageDetails.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/Message/MessageDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVxNZXNzYWdlRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/Message/MessageStudentDetails.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/Message/MessageStudentDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVxNZXNzYWdlU3R1ZGVudERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/Message/SendMessage.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/Message/SendMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVxTZW5kTWVzc2FnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/Message/SendMessageTeacher.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/Message/SendMessageTeacher.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVxTZW5kTWVzc2FnZVRlYWNoZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/Shared/Components/_CommentWithCourse/Default.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/Shared/Components/_CommentWithCourse/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0NvbW1lbnRXaXRoQ291cnNlXERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/Shared/Components/_CourseDetailCourseName/Default.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/Shared/Components/_CourseDetailCourseName/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0NvdXJzZURldGFpbENvdXJzZU5hbWVcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/Shared/Error.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/Shared/Components/_Student/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1N0dWRlbnRcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/Shared/Components/_Teacher/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1RlYWNoZXJcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/Shared/Student/_StudentLayout.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/Shared/Student/_StudentLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFN0dWRlbnRcX1N0dWRlbnRMYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/Shared/Teacher/_TeacherLayout.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/Shared/Teacher/_TeacherLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFRlYWNoZXJcX1RlYWNoZXJMYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/Shared/Vitrin/_VitrinLayout.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/Shared/Vitrin/_VitrinLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFZpdHJpblxfVml0cmluTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/Shared/_loginLayout.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/Shared/_loginLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9sb2dpbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/Shared/_registerLayout.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/Shared/_registerLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9yZWdpc3RlckxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/Student/AddStudent.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/Student/AddStudent.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxBZGRTdHVkZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/Student/Index.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/Student/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/Student/ListCourseDetail.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/Student/ListCourseDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxMaXN0Q291cnNlRGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/Student/ListUserCourse.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/Student/ListUserCourse.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxMaXN0VXNlckNvdXJzZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/Student/UpdateStudent.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/Student/UpdateStudent.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxVcGRhdGVTdHVkZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/TeacherCourse/AddCourse.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/TeacherCourse/AddCourse.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlckNvdXJzZVxBZGRDb3Vyc2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/TeacherCourse/ListCourse.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/TeacherCourse/ListCourse.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlckNvdXJzZVxMaXN0Q291cnNlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/TeacherCourse/ListCourseDetail.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/TeacherCourse/ListCourseDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlckNvdXJzZVxMaXN0Q291cnNlRGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/TeacherCourse/UpdateCourse.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/TeacherCourse/UpdateCourse.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlckNvdXJzZVxVcGRhdGVDb3Vyc2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/Teacher/AddTeacher.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/Teacher/AddTeacher.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlclxBZGRUZWFjaGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/Teacher/ListTeacher.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/Teacher/ListTeacher.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlclxMaXN0VGVhY2hlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/Teacher/TeacherCourse.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/Teacher/TeacherCourse.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlclxUZWFjaGVyQ291cnNlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/Teacher/UpdateTeacher.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/Teacher/UpdateTeacher.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlclxVcGRhdGVUZWFjaGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/User/Login.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/User/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/User/Register.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/User/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/VitrinAbout/Index.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/VitrinAbout/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVml0cmluQWJvdXRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/VitrinContact/Index.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/VitrinContact/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVml0cmluQ29udGFjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/VitrinCourse/CourseBuy.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/VitrinCourse/CourseBuy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVml0cmluQ291cnNlXENvdXJzZUJ1eS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/VitrinCourse/CourseDetail.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/VitrinCourse/CourseDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVml0cmluQ291cnNlXENvdXJzZURldGFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/VitrinCourse/CourseDetailName.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/VitrinCourse/CourseDetailName.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVml0cmluQ291cnNlXENvdXJzZURldGFpbE5hbWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/VitrinCourse/Index.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/VitrinCourse/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVml0cmluQ291cnNlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/VitrinHome/Index.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/VitrinHome/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVml0cmluSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/_ViewImports.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bugra/Desktop/Casgem_Egitim-main/CasgemEgitimProjesi-main (2)/CasgemEgitimProjesi-main/CasgemEgitim.PresentationLayer/Views/_ViewStart.cshtml]
+[C:/Users/bugra/Desktop/1- Dosya/1-Projeler/casgem/CasgemEgitimProjesi/CasgemEgitim.PresentationLayer/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

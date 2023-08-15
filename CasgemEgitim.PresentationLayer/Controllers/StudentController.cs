@@ -1,10 +1,12 @@
 ﻿using CasgemEgitim.BusinessLayer.Abstract;
 using CasgemEgitim.EntityLayer.Concrete;
 using CasgemEgitim.ModelViewLayer.ModelView.Comment;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CasgemEgitim.PresentationLayer.Controllers
 {
+    //[Authorize]
     public class StudentController : Controller
     {
         private readonly IStudentService _studentService;
@@ -98,9 +100,10 @@ namespace CasgemEgitim.PresentationLayer.Controllers
             {
                CourseId = p.CourseId,
                StudentId = Convert.ToInt32(studentId),
-               CommentMessage = p.CommentMessage
+               CommentMessage = p.CommentMessage,
+               CommentDate = DateTime.Now
 
-            };
+        };
             _commentService.TInsert(model);
             return RedirectToAction("ListUserCourse");
         }

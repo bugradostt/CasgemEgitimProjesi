@@ -14,7 +14,7 @@ namespace CasgemEgitim.PresentationLayer.ViewComponents.Comment
 
         public IViewComponentResult Invoke(int id)
         {
-            var values = _commentService.TGetCommentCoursesWithUserStudent(id);
+            var values = _commentService.TGetCommentCoursesWithUserStudent(id).OrderByDescending(x=>x.CommentDate).ToList();
             return View(values);
         }
     }

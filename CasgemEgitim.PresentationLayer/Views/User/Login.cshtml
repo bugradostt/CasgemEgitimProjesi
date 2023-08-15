@@ -20,18 +20,18 @@
 
             <div class="forms-gds">
                 <div>
-                    <input asp-for="Username" placeholder="Kullanıcı Adı" required />
+                    <input type="text" asp-for="Username" style="border-radius:5px; width:290px;" placeholder="Kullanıcı Adı" required />
                 </div>
 
                 <div class="form-input">
 
-                    <input asp-for="Password" placeholder="Password" required />
+                    <input type="password" asp-for="Password" placeholder="Şifre" style=" width:290px; border-radius:5px; " required />
                 </div>
                 <div class="form-input">
-                    <input type="submit" value="Giriş Yap" class="btn" style="background-color:orchid; color:white; border:3px; padding: 10px; width: 300px " />
+                    <input type="submit" value="Giriş Yap" class="btn btn-info" style="background-color:orchid; color:white; border:3px; padding: 13px; border-radius:5px;  width: 150px " />
                 </div>
             </div>
-            <h6 class="already"> Hesabınız yok mu? <a href="/User/Register/"><span>Kaydol<span></span></span></a></h6>
+            <h6 class="already"> Hesabınız yok mu? <a target="_blank" href="/User/Register/"><span>Kaydol<span></span></span></a></h6>
         </form>
     </div>
 </div>

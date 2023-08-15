@@ -32,16 +32,18 @@ namespace CasgemEgitim.PresentationLayer.Controllers
                 HttpContext.Session.SetString("username", student.Username);
                 HttpContext.Session.SetString("studentId", student.StudentId.ToString());
                 ViewBag.s = student.StudentName;
-                return Redirect($"{student.Role}/Index");
+                return RedirectToAction("ListUserCourse", "Student");
+                //return Redirect($"{student.Role}/Index");
             }
             var teacher = await teacherService.TGetTeacherByUsername(vm.Username);
             if (teacher != null && teacher.TeacherPassword == vm.Password)
             {
                 ViewBag.t = teacher.TeacherName;
-                HttpContext.Session.SetString("username", teacher.TeacherUsername);
+                HttpContext.Session.SetString("teacherUsername", teacher.TeacherUsername);
                 HttpContext.Session.SetString("teachertId", teacher.TeachertId.ToString());
 
-                return Redirect($"{teacher.Role}/Index");
+                return RedirectToAction("ListCourse", "TeacherCourse");
+               // return Redirect($"{teacher.Role}/Index");
 
             }
             return View();
