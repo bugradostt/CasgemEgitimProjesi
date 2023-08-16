@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace CasgemEgitim.DataAccessLayer.Migrations
 {
-    public partial class mig_rsc : Migration
+    public partial class migdeneme : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -31,10 +31,10 @@ namespace CasgemEgitim.DataAccessLayer.Migrations
                 {
                     StudentId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    StudentName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    StudentSurname = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    StudentName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    StudentSurname = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Username = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Mail = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Mail = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Role = table.Column<string>(type: "nvarchar(max)", nullable: false)
@@ -54,7 +54,7 @@ namespace CasgemEgitim.DataAccessLayer.Migrations
                     TeacherSurname = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     TeacherUsername = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     TeacherPassword = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    TeacherImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    TeacherImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Role = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>

@@ -73,8 +73,15 @@ namespace CasgemEgitim.PresentationLayer.Controllers
             return RedirectToAction("ListUserCourse", "Student");
         }
 
+        public IActionResult ListCourseTeacher(int id)
+        {
+            ViewBag.courseByIdWithTeacherName = _courseService.TGetCourseByIdWithTeacherName(id);
+            var values = _courseService.TGetCoursesWithUserTeacher(id).OrderByDescending(x => x.CourseId).ToList();
+            return View(values);
+        }
 
 
-      
+
+
     }
 }

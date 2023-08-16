@@ -15,6 +15,11 @@ namespace CasgemEgitim.DataAccessLayer.EntityFramework
     {
         Context c = new Context();
 
+        public string GetCourseByIdWithTeacherName(int id)
+        {
+            return c.Teachers.Where(x => x.TeachertId == id).Select(x => x.TeacherUsername).FirstOrDefault();
+        }
+
         public Course GetCoursesByIdWithTeacher(int id)
         {
 

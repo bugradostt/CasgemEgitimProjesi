@@ -10,10 +10,10 @@
 <section class="w3l-breadcrumb">
     <div class="breadcrumb-bg breadcrumb-bg-about py-5">
         <div class="container pt-lg-5 pt-3 p-lg-4 pb-3">
-            <h2 class="title mt-5 pt-lg-5 pt-sm-3">Online Kurslar</h2>
+            <h2 class="title mt-5 pt-lg-5 pt-sm-3">@ViewBag.courseByIdWithTeacherName</h2>
             <ul class="breadcrumbs-custom-path pb-sm-5 pb-4 mt-2 text-center mb-md-5">
-                <li><a href="/VitrinHome/Index/">Anasayfa</a></li>
-                <li class="active"> / Kurslar </li>
+                <li><a href="/VitrinHome/Index/">Kurslar</a></li>
+                <li class="active"> / Eğitmene Ait Kurslar </li>
             </ul>
         </div>
     </div>
@@ -25,41 +25,8 @@
 
 </section>
 
-<form method="get"> 
-    <div class="row">
-
-        <div class="col-lg-2"></div>
-        <div class="col-lg-6">
-            <input type="text" name="search" id="search" class="form-control" placeholder="Kurs aratınız" />
-        </div>
-        <div class="col-lg-4">
-            <button type="submit" class="btn btn-outline-secondary">
-                <i class="fas fa-search"></i> 
-            </button>
-
-            <a href="/VitrinCourse/Index/" class="btn btn-outline-danger">
-                İptal
-            </a>
-        </div>
-
-    </div>
-
-</form>
 
 
-
-
-@if (!Model.Any())
-{
-    <br />
-    <br />
-    <br />
-    <div class="alert alert-danger ml-3 mr-3"  role="alert">
-       Aranan kurs bulunamadı. Lütfen başka kurs aratınız !
-    </div>
-}
-else
-{
     <!-- //about breadcrumb -->
     <section class="w3l-courses">
         <div class="blog pb-5" id="courses">
@@ -95,20 +62,6 @@ else
                                         @i.CourseName
                                     </a>
 
-
-                                    <div class="author align-items-center mt-4">
-                                        <img src="@i.Teacher.TeacherImageUrl" alt="" class="img-fluid rounded-circle">
-                                        <ul class="blog-meta">
-
-                                            <li>
-                                                <span class="meta-value mx-1"></span>Hazırlayan, <a href="#author"></a>
-                                            </li>
-                                            <li>
-                                                <span class="meta-value mx-1"></span> <a href="/VitrinCourse/ListCourseTeacher/@i.TeacherId">@i.Teacher.TeacherName</a>
-                                            </li>
-
-                                        </ul>
-                                    </div>
                                 </div>
                                 <div class="card-footer">
                                     <a href="/VitrinCourse/CourseDetail/@i.CourseId" class="btn btn-info form-control">İncele</a>
@@ -116,7 +69,7 @@ else
 
 
                             </div>
-                           
+
                         </div>
 
 
@@ -130,7 +83,5 @@ else
         </div>
     </section>
 
-
-}
 
 
