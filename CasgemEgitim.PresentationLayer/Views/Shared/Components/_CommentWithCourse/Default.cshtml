@@ -36,8 +36,19 @@
                             <img width="50" height="50" src="https://img.icons8.com/ios/100/chat-message--v1.png" alt="chat-message--v1" />
                         </th>
                         <th>
-                          
-                            @i.CommentMessage</th>
+                            @i.Student.StudentName
+                            <span>
+                                - @i.Student.StudentSurname.Substring(0,2)
+                            </span>
+                            @for (int j = 0; j < i.Student.StudentSurname.Length-2; j++)
+                            {
+                                <span>*</span>
+                            }
+                            <br>
+                            <span style="color:gray">
+                                @i.CommentMessage
+                            </span>
+                         </th>
                         <td style="text-align:end">
                             <span style="color:#808080">
 

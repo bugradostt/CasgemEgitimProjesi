@@ -21,7 +21,7 @@ namespace CasgemEgitim.DataAccessLayer.Concrete
 
 
             //Selvi
-          //optionsBuilder.UseSqlServer("Data Source=DESKTOP-U4DC5DI; initial catalog=CasgemEgitimProjesi1Db; integrated security=true");
+          //optionsBuilder.UseSqlServer("Data Source=DESKTOP-U4DC5DI; initial catalog=CasgemEgitimProjesiDb; integrated security=true");
 
         }
 

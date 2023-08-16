@@ -9,6 +9,7 @@ namespace CasgemEgitim.PresentationLayer.ViewComponents.Layout
         public IViewComponentResult Invoke()
         {
             ViewBag.teacherUsername = HttpContext.Session.GetString("teacherUsername");
+            ViewBag.teacherImageUrl = HttpContext.Session.GetString("teacherImageUrl");
             return View();
         }
     }

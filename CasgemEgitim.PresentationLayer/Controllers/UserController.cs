@@ -30,6 +30,7 @@ namespace CasgemEgitim.PresentationLayer.Controllers
             if (student != null && student.Password == vm.Password)
             {
                 HttpContext.Session.SetString("username", student.Username);
+                HttpContext.Session.SetString("imageUrl", student.ImageUrl);
                 HttpContext.Session.SetString("studentId", student.StudentId.ToString());
                 ViewBag.s = student.StudentName;
                 return RedirectToAction("ListUserCourse", "Student");
@@ -40,6 +41,7 @@ namespace CasgemEgitim.PresentationLayer.Controllers
             {
                 ViewBag.t = teacher.TeacherName;
                 HttpContext.Session.SetString("teacherUsername", teacher.TeacherUsername);
+                HttpContext.Session.SetString("teacherImageUrl", teacher.TeacherImageUrl);
                 HttpContext.Session.SetString("teachertId", teacher.TeachertId.ToString());
 
                 return RedirectToAction("ListCourse", "TeacherCourse");
