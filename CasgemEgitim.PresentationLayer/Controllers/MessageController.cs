@@ -29,7 +29,7 @@ namespace CasgemEgitim.PresentationLayer.Controllers
         {
             var values = _messageService.TGetById(id);
             ViewBag.subject = values.Subject;
-            ViewBag.sender = values.SenderID;
+            //ViewBag.sender = values.SenderID;
             ViewBag.message = values.MessageDetails;
             ViewBag.date = values.MessageDate;
             return View(values);
@@ -44,7 +44,7 @@ namespace CasgemEgitim.PresentationLayer.Controllers
         public ActionResult MessageStudentDetails(int id) {
             var values = _messageService.TGetById(id);
             ViewBag.subject = values.Subject;
-            ViewBag.sender = values.SenderID;
+           // ViewBag.sender = values.SenderID;
             ViewBag.message = values.MessageDetails;
             ViewBag.date = values.MessageDate.ToShortDateString();
             return View(values);
@@ -57,7 +57,8 @@ namespace CasgemEgitim.PresentationLayer.Controllers
         [HttpPost]
         public ActionResult SendMessage(Message message)
         {
-            message.SenderID = 1;
+            message.SenderName = "bugra";
+            message.ReceiverName = "dost";
             message.MessageDate = DateTime.Now;
             message.MessageStatus = true;
             _messageService.TInsert(message);
@@ -71,9 +72,9 @@ namespace CasgemEgitim.PresentationLayer.Controllers
         [HttpPost]
         public ActionResult SendMessageTeacher(Message message)
         {
-            message.SenderID = 2;
+           // message.SenderID = 2;
             message.MessageDate = DateTime.Now;
-            message.MessageStatus = true;
+            //message.MessageStatus = true;
             _messageService.TInsert(message);
             return RedirectToAction("GetInboxTeacher");
         }

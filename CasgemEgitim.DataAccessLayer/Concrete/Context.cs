@@ -25,30 +25,7 @@ namespace CasgemEgitim.DataAccessLayer.Concrete
 
         }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Message>()
-               .HasOne(x => x.SenderStudent)
-               .WithMany(y => y.SentMessages)
-               .HasForeignKey(z => z.SenderID)
-               .OnDelete(DeleteBehavior.ClientSetNull);
-
-            modelBuilder.Entity<Message>()
-             .HasOne(m => m.ReceiverStudent)
-             .WithMany(s => s.ReceiverMessages)
-             .HasForeignKey(m => m.ReceiverID);
-
-            modelBuilder.Entity<Message>()
-                .HasOne(m => m.SenderTeacher)
-                .WithMany(t => t.SentMessages)
-                .HasForeignKey(m => m.SenderID);
-
-            modelBuilder.Entity<Message>()
-                .HasOne(m => m.ReceiverTeacher)
-                .WithMany(t => t.ReceivedMessages)
-                .HasForeignKey(m => m.ReceiverID);
-        }
-
+     
         public DbSet<Contact> Contacts{ get; set; }
         public DbSet<Course> Courses { get; set; }
         public DbSet<Movement> Movements{ get; set; }
