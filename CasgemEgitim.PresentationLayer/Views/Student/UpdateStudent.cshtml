@@ -5,7 +5,7 @@
 }
 <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
 <h1>Öğrenci Bilgi Güncelleme Sayfası</h1>
-
+<hr />
 <br />
 <br />
 <form method="post">
@@ -28,5 +28,7 @@
     <label>Resim</label>
     <input type="text" class="form-control" asp-for="ImageUrl" />
     <br />
-    <button class="btn btn-primary">Güncelle</button>
+    <a href="/Student/UpdateGetStudent/" class="btn btn-danger">İptal</a>
+
+    <button type="submit" class="btn btn-warning">Güncelle</button>
 </form>

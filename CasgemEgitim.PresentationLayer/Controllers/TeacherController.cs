@@ -44,10 +44,20 @@ namespace CasgemEgitim.PresentationLayer.Controllers
             return RedirectToAction("ListTeacher");
         }
 
+
         [HttpGet]
-        public IActionResult UpdateTeacher(int id)
+        public IActionResult UpdateGetTeacher()
         {
-            var values = _teacherService.TGetById(id);
+            var teachertId = HttpContext.Session.GetString("teachertId");
+            var values = _teacherService.TGetById(Convert.ToInt32(teachertId));
+            return View(values);
+        }
+
+        [HttpGet]
+        public IActionResult UpdateTeacher()
+        {
+            var teachertId = HttpContext.Session.GetString("teachertId");
+            var values = _teacherService.TGetById(Convert.ToInt32(teachertId));
             return View(values);
         }
 
@@ -61,7 +71,7 @@ namespace CasgemEgitim.PresentationLayer.Controllers
             values.TeacherImageUrl= teacher.TeacherImageUrl;
             values.TeacherPassword = teacher.TeacherPassword;
             _teacherService.TUpdate(values);
-            return RedirectToAction("ListTeacher");
+            return RedirectToAction("UpdateGetTeacher");
         }
         public IActionResult TeacherCourse(int teacherId)
         {

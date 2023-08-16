@@ -60,9 +60,18 @@ namespace CasgemEgitim.PresentationLayer.Controllers
         }
 
         [HttpGet]
-        public IActionResult UpdateStudent(int id)
+        public IActionResult UpdateStudent()
         {
-            var values = _studentService.TGetById(id);
+            var studentId = HttpContext.Session.GetString("studentId");
+            var values = _studentService.TGetById(Convert.ToInt32(studentId));
+            return View(values);
+        }
+
+        [HttpGet]
+        public IActionResult UpdateGetStudent()
+        {
+            var studentId = HttpContext.Session.GetString("studentId");
+            var values = _studentService.TGetById(Convert.ToInt32(studentId));
             return View(values);
         }
 
@@ -76,7 +85,7 @@ namespace CasgemEgitim.PresentationLayer.Controllers
             values.ImageUrl = student.ImageUrl;
             values.Password = student.Password;
             _studentService.TUpdate(values);
-            return RedirectToAction("Index");
+            return RedirectToAction("UpdateGetStudent");
         }
 
         //kurs Detay işlemleri

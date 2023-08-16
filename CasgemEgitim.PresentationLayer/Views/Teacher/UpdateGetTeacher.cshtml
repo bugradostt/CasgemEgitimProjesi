@@ -1,0 +1,33 @@
+﻿@model Teacher
+@{
+    ViewData["Title"] = "UpdateTeacher";
+    Layout = "~/Views/Shared/Teacher/_TeacherLayout.cshtml";
+}
+
+<h1>Öğretmen Bilgi Güncelleme</h1>
+<hr />
+
+   <input type="hidden" asp-for="TeachertId" />
+
+    <label>Resim</label>
+    <br />
+    <img src="@Model.TeacherImageUrl" width="200"/>
+   
+    <br />
+
+    <label>Öğretmen Adı</label>
+    <input type="text" readonly class="form-control" asp-for="TeacherName" />
+    <br />
+    <label>Öğretmen Soyadı</label>
+    <input type="text" readonly class="form-control" asp-for="TeacherSurname" />
+    <br />
+    <label>Öğretmen Kullanıcı Adı</label>
+    <input type="text" readonly class="form-control" asp-for="TeacherUsername" />
+    <br />
+    <label>Şifre</label>
+    <input type="text" readonly class="form-control" asp-for="TeacherPassword" />
+    <br />
+    
+    <br />
+<a href="/Teacher/UpdateTeacher/" class="btn btn-warning">Güncelle</a>
+

@@ -5,6 +5,7 @@
 }
 
 <h1>Öğretmen Bilgi Güncelleme</h1>
+<hr />
 
 <form method="post">
     <input type="hidden" asp-for="TeachertId" />
@@ -23,5 +24,6 @@
     <label>Resim</label>
     <input type="text" class="form-control" asp-for="TeacherImageUrl" />
     <br />
-    <button class="btn btn-primary">Güncelle</button>
+    <a href="/Teacher/UpdateGetTeacher/" class="btn btn-danger">İptal</a>
+    <button type="submit" class="btn btn-warning">Güncelle</button>
 </form>

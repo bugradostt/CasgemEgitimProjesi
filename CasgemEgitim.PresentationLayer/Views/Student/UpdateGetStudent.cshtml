@@ -1,0 +1,37 @@
+﻿@model Student
+@{
+    ViewData["Title"] = "UpdateStudent";
+    Layout = "~/Views/Shared/Student/_StudentLayout.cshtml";
+}
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<h1>Öğrenci Bilgi Güncelleme Sayfası</h1>
+<hr />
+
+<br />
+<br />
+
+    <input type="hidden" asp-for="StudentId" />
+<label>Resim</label>
+<br />
+<img src="@Model.ImageUrl" width="200" />
+
+<br />
+    <label>Öğrenci Adı</label>
+    <input type="text" readonly class="form-control" asp-for="StudentName" />
+    <br />
+    <label>Öğrenci Soyadı</label>
+    <input type="text" readonly class="form-control" asp-for="StudentSurname" />
+    <br />
+    <label>Öğrenci Soyadı</label>
+    <input type="text" readonly class="form-control" asp-for="Mail" />
+    <br />
+    <label>Kullanıcı Adı</label>
+    <input type="text" readonly class="form-control" asp-for="Username" />
+    <br />
+    <label>Şifre</label>
+    <input type="text" readonly class="form-control" asp-for="Password" />
+    <br />
+   
+    <br />
+
+<a href="/Student/UpdateStudent/" class="btn btn-warning">Güncelle</a>

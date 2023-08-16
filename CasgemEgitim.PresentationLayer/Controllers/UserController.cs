@@ -71,7 +71,7 @@ namespace CasgemEgitim.PresentationLayer.Controllers
                     StudentSurname= vm.Surname,
                     Username = vm.Username,
                     Password = vm.Password,
-                    ImageUrl="test",
+                    ImageUrl= "https://static.vecteezy.com/system/resources/previews/008/442/086/original/illustration-of-human-icon-user-symbol-icon-modern-design-on-blank-background-free-vector.jpg",
                     Role = "Student"
                 };
 
@@ -85,7 +85,7 @@ namespace CasgemEgitim.PresentationLayer.Controllers
                     TeacherSurname=vm.Surname,
                     TeacherUsername = vm.Username,
                     TeacherPassword = vm.Password,
-                    TeacherImageUrl= "test",
+                    TeacherImageUrl= "https://static.vecteezy.com/system/resources/previews/008/442/086/original/illustration-of-human-icon-user-symbol-icon-modern-design-on-blank-background-free-vector.jpg",
                     Role = "Teacher"
                 };
 
