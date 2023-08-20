@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dklW0nutzTbD85I3c8TA5cUL0PjxQoZbQLIJpBfxydl/xCP3F1/kxNtj/+RV0xbZRsvQjEdvIx4zs+V6eVU1dA==",
+  "dgSpecHash": "rNPrTdgwxfcsFej2lVWjROQ21bqEN7/o0o5arL2C+UCeOL3lJWx2PQCp3/+aHQBano72xeE3y8fZHGbHWItDMw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bugra\\Desktop\\1- Dosya\\1-Projeler\\casgem\\CasgemEgitimProjesi\\CasgemEgitim.PresentationLayer\\CasgemEgitim.PresentationLayer.csproj",
+  "projectFilePath": "C:\\Users\\bugra\\Desktop\\1- Dosya\\CasgemEgitimProjesi\\CasgemEgitim.PresentationLayer\\CasgemEgitim.PresentationLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bugra\\.nuget\\packages\\fluentvalidation\\11.6.0\\fluentvalidation.11.6.0.nupkg.sha512",
     "C:\\Users\\bugra\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
@@ -197,6 +197,7 @@
     "C:\\Users\\bugra\\.nuget\\packages\\system.runtime.interopservices.runtimeinformation\\4.3.0\\system.runtime.interopservices.runtimeinformation.4.3.0.nupkg.sha512",
     "C:\\Users\\bugra\\.nuget\\packages\\system.runtime.numerics\\4.3.0\\system.runtime.numerics.4.3.0.nupkg.sha512",
     "C:\\Users\\bugra\\.nuget\\packages\\system.security.accesscontrol\\6.0.0\\system.security.accesscontrol.6.0.0.nupkg.sha512",
+    "C:\\Users\\bugra\\.nuget\\packages\\system.security.claims\\4.3.0\\system.security.claims.4.3.0.nupkg.sha512",
     "C:\\Users\\bugra\\.nuget\\packages\\system.security.cryptography.algorithms\\4.3.0\\system.security.cryptography.algorithms.4.3.0.nupkg.sha512",
     "C:\\Users\\bugra\\.nuget\\packages\\system.security.cryptography.cng\\5.0.0\\system.security.cryptography.cng.5.0.0.nupkg.sha512",
     "C:\\Users\\bugra\\.nuget\\packages\\system.security.cryptography.csp\\4.3.0\\system.security.cryptography.csp.4.3.0.nupkg.sha512",
@@ -207,6 +208,7 @@
     "C:\\Users\\bugra\\.nuget\\packages\\system.security.cryptography.protecteddata\\6.0.0\\system.security.cryptography.protecteddata.6.0.0.nupkg.sha512",
     "C:\\Users\\bugra\\.nuget\\packages\\system.security.cryptography.x509certificates\\4.3.0\\system.security.cryptography.x509certificates.4.3.0.nupkg.sha512",
     "C:\\Users\\bugra\\.nuget\\packages\\system.security.permissions\\6.0.0\\system.security.permissions.6.0.0.nupkg.sha512",
+    "C:\\Users\\bugra\\.nuget\\packages\\system.security.principal\\4.3.0\\system.security.principal.4.3.0.nupkg.sha512",
     "C:\\Users\\bugra\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
     "C:\\Users\\bugra\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
     "C:\\Users\\bugra\\.nuget\\packages\\system.text.encoding.codepages\\6.0.0\\system.text.encoding.codepages.6.0.0.nupkg.sha512",

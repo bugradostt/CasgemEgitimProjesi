@@ -2,10 +2,13 @@
 using CasgemEgitim.EntityLayer.Concrete;
 using CasgemEgitim.ModelViewLayer.ModelView.Course;
 using CasgemEgitim.ModelViewLayer.ModelView.Video;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Data;
 
 namespace CasgemEgitim.PresentationLayer.Controllers
 {
+    [Authorize(Roles = "Teacher")]
     public class TeacherCourseController : Controller
     {
         readonly ICourseService _courseService;

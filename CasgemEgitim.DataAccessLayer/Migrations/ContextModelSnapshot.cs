@@ -129,6 +129,9 @@ namespace CasgemEgitim.DataAccessLayer.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("MessageStatus")
+                        .HasColumnType("bit");
+
                     b.Property<string>("ReceiverName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

@@ -14,18 +14,16 @@ namespace CasgemEgitim.DataAccessLayer.EntityFramework
     public class EFMessageRepository : GenericRepositoriy<Message>, IMessageDal
     {
         Context c = new Context();
-
-        public List<Message> GetMessagesByStudentID(int studentID)
+        public List<Message> GetMessageWithReceiverName(string receiverName)
         {
-            throw new NotImplementedException();
-          
-                //return c.Messages.Where(m => m.MessageID == studentID).ToList();
-            
+            return c.Messages.Where(x=>x.ReceiverName == receiverName).ToList();
+           
         }
 
-        public List<Message> GetMessagesByTeacherID(int teacherID)
+        public List<Message> GetMessageWithSenderName(string senderName)
         {
-            return c.Messages.Where(m => m.MessageID == teacherID).ToList();
+            return c.Messages.Where(x=>x.SenderName == senderName).ToList();
+          
         }
     }
 }

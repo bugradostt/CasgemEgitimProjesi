@@ -4,19 +4,22 @@
     Layout = "~/Views/Shared/Teacher/_TeacherLayout.cshtml";
 }
 
+
 <h1>Yeni Mesaj</h1>
 
 <div class="container">
     <form method="post">
-        <label>Alıcı</label>
-        <input type="text"  class="form-control" />
+        <label>Kullanıcı Adı</label>
+        <input type="text" asp-for="ReceiverName" required placeholder="Kullanıcı adı" class="form-control" />
         <br />
         <label>Konu</label>
-        <input type="text" asp-for="Subject" class="form-control" />
+        <input type="text" asp-for="Subject" required placeholder="Konu" class="form-control" />
         <br />
         <label>Mesaj</label>
-        <input type="text" asp-for="MessageDetails" class="form-control" />
+        <textarea asp-for="MessageDetails" required class="form-control" rows="5" placeholder="Mesajı yazınız"></textarea>
+
         <br />
-        <button class="btn btn-success">Gönder</button>
+        <a class="btn btn-danger" href="/Message/GetInboxStudent/">İptal</a>
+        <button type="submit" class="btn btn-success">Gönder</button>
     </form>
 </div>

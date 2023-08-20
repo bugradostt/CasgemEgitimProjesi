@@ -21,8 +21,8 @@ namespace CasgemEgitim.PresentationLayer.Controllers
 
         public ActionResult GetInboxTeacher()
         {
-            var teachertId = HttpContext.Session.GetString("teachertId");
-            var values = _messageService.GetMessagesByTeacherID(Convert.ToInt32(teachertId));
+            var receiverName = HttpContext.Session.GetString("teacherUsername");
+            var values = _messageService.TGetMessageWithReceiverName(receiverName).OrderByDescending(x => x.MessageDate).ToList();
             return View(values);
         }
         public ActionResult MessageDetails(int id)
@@ -35,19 +35,46 @@ namespace CasgemEgitim.PresentationLayer.Controllers
             return View(values);
         }
 
-        public ActionResult GetInboxStudent(int id) {
-            var studentId = HttpContext.Session.GetString("studentId");
-        
-            var values = _messageService.GetMessagesByStudentID(Convert.ToInt32(studentId));
+        public ActionResult GetInboxStudent() 
+        {
+
+            var receiverName = HttpContext.Session.GetString("username");
+            var values = _messageService.TGetMessageWithReceiverName(receiverName).OrderByDescending(x=>x.MessageDate).ToList();
+            return View(values);
+        }
+
+
+        public ActionResult GetUnreadStudent()
+        {
+
+            var receiverName = HttpContext.Session.GetString("username");
+            var values = _messageService.TGetMessageWithReceiverName(receiverName).Where(x=>x.MessageStatus==true).OrderByDescending(x => x.MessageDate).ToList();
+            return View(values);
+        }
+
+        public ActionResult GetSentStudent()
+        {
+
+            var senderName = HttpContext.Session.GetString("username");
+            var values = _messageService.TGetMessageWithSenderName(senderName).OrderByDescending(x => x.MessageDate).ToList();
             return View(values);
         }
         public ActionResult MessageStudentDetails(int id) {
             var values = _messageService.TGetById(id);
-            ViewBag.subject = values.Subject;
-           // ViewBag.sender = values.SenderID;
-            ViewBag.message = values.MessageDetails;
-            ViewBag.date = values.MessageDate.ToShortDateString();
+            if (values.MessageStatus==true)
+            {
+                values.MessageStatus = false;
+                _messageService.TUpdate(values);
+
+            }
             return View(values);
+        }
+
+        public ActionResult DeleteStudentMessage(int id)
+        {
+            var foundId = _messageService.TGetById(id);
+            _messageService.TDelete(foundId);
+            return RedirectToAction("GetInboxStudent");
         }
         [HttpGet]
         public ActionResult SendMessage()
@@ -57,14 +84,18 @@ namespace CasgemEgitim.PresentationLayer.Controllers
         [HttpPost]
         public ActionResult SendMessage(Message message)
         {
-            message.SenderName = "bugra";
-            message.ReceiverName = "dost";
+            var senderName = HttpContext.Session.GetString("username");
+            message.SenderName = senderName;
+            message.ReceiverName = message.ReceiverName;
             message.MessageDate = DateTime.Now;
             message.MessageStatus = true;
             _messageService.TInsert(message);
             return RedirectToAction("GetInboxStudent");
         } 
+        
+        
         [HttpGet]
+
         public ActionResult SendMessageTeacher()
         {
             return View();   
@@ -72,13 +103,50 @@ namespace CasgemEgitim.PresentationLayer.Controllers
         [HttpPost]
         public ActionResult SendMessageTeacher(Message message)
         {
-           // message.SenderID = 2;
+            var senderName = HttpContext.Session.GetString("teacherUsername");
+            message.SenderName = senderName;
+            message.ReceiverName = message.ReceiverName;
             message.MessageDate = DateTime.Now;
-            //message.MessageStatus = true;
+            message.MessageStatus = true;
             _messageService.TInsert(message);
             return RedirectToAction("GetInboxTeacher");
         }
 
-        
+        public ActionResult GetUnreadTeacher()
+        {
+
+            var receiverName = HttpContext.Session.GetString("teacherUsername");
+            var values = _messageService.TGetMessageWithReceiverName(receiverName).Where(x => x.MessageStatus == true).OrderByDescending(x => x.MessageDate).ToList();
+            return View(values);
+        }
+
+        public ActionResult GetSentTeacher()
+        {
+
+            var senderName = HttpContext.Session.GetString("teacherUsername");
+            var values = _messageService.TGetMessageWithSenderName(senderName).OrderByDescending(x => x.MessageDate).ToList();
+            return View(values);
+        }
+
+        public ActionResult DeleteTeacherMessage(int id)
+        {
+            var foundId = _messageService.TGetById(id);
+            _messageService.TDelete(foundId);
+            return RedirectToAction("GetInboxTeacher");
+        }
+
+        public ActionResult MessageTeacherDetails(int id)
+        {
+            var values = _messageService.TGetById(id);
+            if (values.MessageStatus == true)
+            {
+                values.MessageStatus = false;
+                _messageService.TUpdate(values);
+
+            }
+            return View(values);
+        }
+
+
     }
 }

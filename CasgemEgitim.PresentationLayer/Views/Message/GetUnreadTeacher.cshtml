@@ -1,0 +1,72 @@
+﻿@model List<Message>
+@{
+    ViewData["Title"] = "GetInboxTeacher";
+    Layout = "~/Views/Shared/Teacher/_TeacherLayout.cshtml";
+}
+
+
+
+<h1>Okunmamuş Mesajlar</h1>
+<hr />
+
+<a href="/Message/SendMessageTeacher/" class="btn btn-dark">Mesaj Gönder</a>
+<a href="/Message/GetInboxTeacher/" class="btn btn-dark">Gelen Kutusu</a>
+
+<a href="/Message/GetUnreadTeacher/" class="btn btn-dark">Okunmamış Mesajlar</a>
+<a href="/Message/GetSentTeacher/" class="btn btn-dark">Gönderilen Mesajlar</a>
+<br />
+<br />
+
+@if (Model.Count == 0)
+{
+    <div class="alert alert-danger" role="alert">
+        Okunmamış mesaj bulunamadı !
+    </div>
+
+}
+else
+{
+    <table class="table table-striped">
+        <tr>
+            <th>#</th>
+            <th></th>
+            <th>Gönderen</th>
+            <th>Konu</th>
+            <th>Tarih</th>
+            <th></th>
+            <th></th>
+        </tr>
+
+        @{
+            int a = 1;
+        }
+        @foreach (var i in Model)
+        {
+            <tr>
+                <th>@a</th>
+                <td>
+                    @if (i.MessageStatus == true)
+                    {
+                        <div style="width:20px; height:20px; border-radius:10px;" class="bg-info"></div>
+                    }
+                    else
+                    {
+                        <span> </span>
+                    }
+                </td>
+                <td>@i.SenderName</td>
+                <td>@i.Subject</td>
+                <td>@(((DateTime)i.MessageDate).ToString("dd-MMM-yyyy"))</td>
+                <td><a href="/Message/MessageStudentDetails/@i.MessageID" class="btn btn-success">Mesajı Gör</a></td>
+                <td><a href="/Message/MessageStudentDetails/@i.MessageID" class="btn btn-danger">Sil</a></td>
+            </tr>
+
+            a++;
+        }
+
+
+    </table>
+
+
+}
+

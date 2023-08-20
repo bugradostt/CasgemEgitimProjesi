@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CasgemEgitim.PresentationLayer.Controllers
 {
-    //[Authorize]
+    [Authorize(Roles ="Student")]
     public class StudentController : Controller
     {
         private readonly IStudentService _studentService;

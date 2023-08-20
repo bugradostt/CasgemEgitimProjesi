@@ -32,3 +32,37 @@ C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\CasgemEgitimProjesi\CasgemEgit
 C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\CasgemEgitimProjesi\CasgemEgitim.DataAccessLayer\obj\Debug\net6.0\CasgemEgitim.DataAccessLayer.pdb
 C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\CasgemEgitimProjesi\CasgemEgitim.DataAccessLayer\obj\Debug\net6.0\CasgemEgitim.DataAccessLayer.genruntimeconfig.cache
 C:\Users\bugra\Desktop\1- Dosya\1-Projeler\casgem\CasgemEgitimProjesi\CasgemEgitim.DataAccessLayer\obj\Debug\net6.0\ref\CasgemEgitim.DataAccessLayer.dll
+C:\Users\nyuce\Desktop\EgitimProject\CasgemEgitimProjesi\CasgemEgitim.DataAccessLayer\bin\Debug\net6.0\CasgemEgitim.DataAccessLayer.deps.json
+C:\Users\nyuce\Desktop\EgitimProject\CasgemEgitimProjesi\CasgemEgitim.DataAccessLayer\bin\Debug\net6.0\CasgemEgitim.DataAccessLayer.runtimeconfig.json
+C:\Users\nyuce\Desktop\EgitimProject\CasgemEgitimProjesi\CasgemEgitim.DataAccessLayer\bin\Debug\net6.0\CasgemEgitim.DataAccessLayer.dll
+C:\Users\nyuce\Desktop\EgitimProject\CasgemEgitimProjesi\CasgemEgitim.DataAccessLayer\bin\Debug\net6.0\CasgemEgitim.DataAccessLayer.pdb
+C:\Users\nyuce\Desktop\EgitimProject\CasgemEgitimProjesi\CasgemEgitim.DataAccessLayer\bin\Debug\net6.0\CasgemEgitim.EntityLayer.dll
+C:\Users\nyuce\Desktop\EgitimProject\CasgemEgitimProjesi\CasgemEgitim.DataAccessLayer\bin\Debug\net6.0\CasgemEgitim.EntityLayer.pdb
+C:\Users\nyuce\Desktop\EgitimProject\CasgemEgitimProjesi\CasgemEgitim.DataAccessLayer\obj\Debug\net6.0\CasgemEgitim.DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\nyuce\Desktop\EgitimProject\CasgemEgitimProjesi\CasgemEgitim.DataAccessLayer\obj\Debug\net6.0\CasgemEgitim.DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nyuce\Desktop\EgitimProject\CasgemEgitimProjesi\CasgemEgitim.DataAccessLayer\obj\Debug\net6.0\CasgemEgitim.DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\nyuce\Desktop\EgitimProject\CasgemEgitimProjesi\CasgemEgitim.DataAccessLayer\obj\Debug\net6.0\CasgemEgitim.DataAccessLayer.AssemblyInfo.cs
+C:\Users\nyuce\Desktop\EgitimProject\CasgemEgitimProjesi\CasgemEgitim.DataAccessLayer\obj\Debug\net6.0\CasgemEgitim.DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\nyuce\Desktop\EgitimProject\CasgemEgitimProjesi\CasgemEgitim.DataAccessLayer\obj\Debug\net6.0\CasgemEgitim.DataAccessLayer.csproj.CopyComplete
+C:\Users\nyuce\Desktop\EgitimProject\CasgemEgitimProjesi\CasgemEgitim.DataAccessLayer\obj\Debug\net6.0\CasgemEgitim.DataAccessLayer.dll
+C:\Users\nyuce\Desktop\EgitimProject\CasgemEgitimProjesi\CasgemEgitim.DataAccessLayer\obj\Debug\net6.0\refint\CasgemEgitim.DataAccessLayer.dll
+C:\Users\nyuce\Desktop\EgitimProject\CasgemEgitimProjesi\CasgemEgitim.DataAccessLayer\obj\Debug\net6.0\CasgemEgitim.DataAccessLayer.pdb
+C:\Users\nyuce\Desktop\EgitimProject\CasgemEgitimProjesi\CasgemEgitim.DataAccessLayer\obj\Debug\net6.0\CasgemEgitim.DataAccessLayer.genruntimeconfig.cache
+C:\Users\nyuce\Desktop\EgitimProject\CasgemEgitimProjesi\CasgemEgitim.DataAccessLayer\obj\Debug\net6.0\ref\CasgemEgitim.DataAccessLayer.dll
+C:\Users\bugra\Desktop\1- Dosya\CasgemEgitimProjesi\CasgemEgitim.DataAccessLayer\bin\Debug\net6.0\CasgemEgitim.DataAccessLayer.deps.json
+C:\Users\bugra\Desktop\1- Dosya\CasgemEgitimProjesi\CasgemEgitim.DataAccessLayer\bin\Debug\net6.0\CasgemEgitim.DataAccessLayer.runtimeconfig.json
+C:\Users\bugra\Desktop\1- Dosya\CasgemEgitimProjesi\CasgemEgitim.DataAccessLayer\bin\Debug\net6.0\CasgemEgitim.DataAccessLayer.dll
+C:\Users\bugra\Desktop\1- Dosya\CasgemEgitimProjesi\CasgemEgitim.DataAccessLayer\bin\Debug\net6.0\CasgemEgitim.DataAccessLayer.pdb
+C:\Users\bugra\Desktop\1- Dosya\CasgemEgitimProjesi\CasgemEgitim.DataAccessLayer\bin\Debug\net6.0\CasgemEgitim.EntityLayer.dll
+C:\Users\bugra\Desktop\1- Dosya\CasgemEgitimProjesi\CasgemEgitim.DataAccessLayer\bin\Debug\net6.0\CasgemEgitim.EntityLayer.pdb
+C:\Users\bugra\Desktop\1- Dosya\CasgemEgitimProjesi\CasgemEgitim.DataAccessLayer\obj\Debug\net6.0\CasgemEgitim.DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\bugra\Desktop\1- Dosya\CasgemEgitimProjesi\CasgemEgitim.DataAccessLayer\obj\Debug\net6.0\CasgemEgitim.DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bugra\Desktop\1- Dosya\CasgemEgitimProjesi\CasgemEgitim.DataAccessLayer\obj\Debug\net6.0\CasgemEgitim.DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\bugra\Desktop\1- Dosya\CasgemEgitimProjesi\CasgemEgitim.DataAccessLayer\obj\Debug\net6.0\CasgemEgitim.DataAccessLayer.AssemblyInfo.cs
+C:\Users\bugra\Desktop\1- Dosya\CasgemEgitimProjesi\CasgemEgitim.DataAccessLayer\obj\Debug\net6.0\CasgemEgitim.DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\bugra\Desktop\1- Dosya\CasgemEgitimProjesi\CasgemEgitim.DataAccessLayer\obj\Debug\net6.0\CasgemEgitim.DataAccessLayer.csproj.CopyComplete
+C:\Users\bugra\Desktop\1- Dosya\CasgemEgitimProjesi\CasgemEgitim.DataAccessLayer\obj\Debug\net6.0\CasgemEgitim.DataAccessLayer.dll
+C:\Users\bugra\Desktop\1- Dosya\CasgemEgitimProjesi\CasgemEgitim.DataAccessLayer\obj\Debug\net6.0\refint\CasgemEgitim.DataAccessLayer.dll
+C:\Users\bugra\Desktop\1- Dosya\CasgemEgitimProjesi\CasgemEgitim.DataAccessLayer\obj\Debug\net6.0\CasgemEgitim.DataAccessLayer.pdb
+C:\Users\bugra\Desktop\1- Dosya\CasgemEgitimProjesi\CasgemEgitim.DataAccessLayer\obj\Debug\net6.0\CasgemEgitim.DataAccessLayer.genruntimeconfig.cache
+C:\Users\bugra\Desktop\1- Dosya\CasgemEgitimProjesi\CasgemEgitim.DataAccessLayer\obj\Debug\net6.0\ref\CasgemEgitim.DataAccessLayer.dll

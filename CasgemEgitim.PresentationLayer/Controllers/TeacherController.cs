@@ -1,10 +1,13 @@
 ﻿using CasgemEgitim.BusinessLayer.Abstract;
 using CasgemEgitim.DataAccessLayer.Concrete;
 using CasgemEgitim.EntityLayer.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Data;
 
 namespace CasgemEgitim.PresentationLayer.Controllers
 {
+    [Authorize(Roles = "Teacher")]
     public class TeacherController : Controller
     {
         readonly ITeacherService _teacherService;

@@ -5,10 +5,11 @@
     Layout = "~/Views/Shared/Student/_StudentLayout.cshtml";
 }
 
-<div class="col-md-9">
+<div class="col-md-12">
     <div class="card card-primary card-outline">
         <div class="card-header">
             <h3 class="card-title">Mesaj Detayı</h3>
+            <hr />
 
             <div class="card-tools">
                 <a href="#" class="btn btn-tool" data-toggle="tooltip" title="Previous"><i class="fas fa-chevron-left"></i></a>
@@ -16,39 +17,51 @@
             </div>
         </div>
         <!-- /.card-header -->
-        <div class="card-body p-0">
-            <div class="mailbox-read-info">
-                <h5> @ViewBag.subject</h5>
-                <h6>
-                    Kimden:@ViewBag.sender
-                    <span class="mailbox-read-time float-right">@ViewBag.date</span>
-                </h6>
+        <div class="card-body ">
+
+
+            <div class="mb-3">
+
+                <label>Gönderen</label>
+                <input type="text" readonly class="form-control" value="@Model.ReceiverName" />
+
             </div>
-            <!-- /.mailbox-read-info -->
-            <div class="mailbox-controls with-border text-center">
-                <div class="btn-group">
-                    <button type="button" class="btn btn-default btn-sm" data-toggle="tooltip" data-container="body" title="Delete">
-                        <i class="far fa-trash-alt"></i>
-                    </button>
-                    <button type="button" class="btn btn-default btn-sm" data-toggle="tooltip" data-container="body" title="Reply">
-                        <i class="fas fa-reply"></i>
-                    </button>
-                    <button type="button" class="btn btn-default btn-sm" data-toggle="tooltip" data-container="body" title="Forward">
-                        <i class="fas fa-share"></i>
-                    </button>
-                </div>
-                <!-- /.btn-group -->
-                <button type="button" class="btn btn-default btn-sm" data-toggle="tooltip" title="Print">
-                    <i class="fas fa-print"></i>
-                </button>
+
+
+            
+            
+            <div class="mb-3">
+
+                <label>Tarih</label>
+                <input type="text" readonly class="form-control" value="@Model.MessageDate.ToShortDateString()" />
+
             </div>
-            <!-- /.mailbox-controls -->
-            <div class="mailbox-read-message">
-                @ViewBag.message
+
+            
+            
+            <div class="mb-3">
+
+                <label>Konu</label>
+                <input type="text" readonly class="form-control" value="@Model.Subject" />
+
             </div>
+
+
+            <div class="mb-3">
+
+                <label>Konu</label>
+                <textarea readonly class="form-control" rows="3">@Model.MessageDetails</textarea>
+            
+            </div>
+
+            <br />
+            <a href="/Message/GetInboxStudent/" class="btn btn-dark">Mesajlara Dön</a>
+
+
+        
             <!-- /.mailbox-read-message -->
         </div>
     </div>
     <!-- /.card -->
+
 </div>
-<a href="/Message/GetInboxStudent/" class="btn btn-dark">Mesajlara Dön</a>

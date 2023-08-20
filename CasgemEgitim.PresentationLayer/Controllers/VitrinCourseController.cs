@@ -3,8 +3,9 @@ using CasgemEgitim.DataAccessLayer.Concrete;
 
 using CasgemEgitim.EntityLayer.Concrete;
 using CasgemEgitim.ModelViewLayer.ModelView.Movement;
-
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Data;
 
 namespace CasgemEgitim.PresentationLayer.Controllers
 {
@@ -48,6 +49,7 @@ namespace CasgemEgitim.PresentationLayer.Controllers
             return View(foundId);
         }
 
+        [Authorize(Roles = "Student")]
         [HttpGet]
         public IActionResult CourseBuy(int id)
         {

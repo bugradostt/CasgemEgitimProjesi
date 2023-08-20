@@ -20,7 +20,5 @@ namespace CasgemEgitim.EntityLayer.Concrete
 
        
 
-
-
     }
 }

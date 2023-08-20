@@ -18,15 +18,6 @@ namespace CasgemEgitim.BusinessLayer.Concrete
             _messageDal = messageDal;
         }
 
-        public List<Message> GetMessagesByStudentID(int studentID)
-        {
-            return _messageDal.GetMessagesByStudentID(studentID);
-        }
-
-        public List<Message> GetMessagesByTeacherID(int teacherID)
-        {
-            return _messageDal.GetMessagesByTeacherID(teacherID);
-        }
 
         public void TDelete(Message t)
         {
@@ -41,6 +32,16 @@ namespace CasgemEgitim.BusinessLayer.Concrete
         public List<Message> TGetList()
         {
             return _messageDal.GetList();
+        }
+
+        public List<Message> TGetMessageWithReceiverName(string receiverName)
+        {
+            return _messageDal.GetMessageWithReceiverName(receiverName);
+        }
+
+        public List<Message> TGetMessageWithSenderName(string senderName)
+        {
+            return _messageDal.GetMessageWithSenderName(senderName);
         }
 
         public void TInsert(Message t)

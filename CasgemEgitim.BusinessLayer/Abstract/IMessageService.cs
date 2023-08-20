@@ -9,7 +9,8 @@ namespace CasgemEgitim.BusinessLayer.Abstract
 {
     public interface IMessageService:IGenericService<Message>
     {
-        List<Message> GetMessagesByStudentID(int studentID);
-        List<Message> GetMessagesByTeacherID(int teacherID);
+        public List<Message> TGetMessageWithReceiverName(string receiverName);
+        public List<Message> TGetMessageWithSenderName(string senderName);
+
     }
 }
